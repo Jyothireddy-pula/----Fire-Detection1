@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wildfire-app:
+    build: .
+    container_name: wildfire-prediction-system
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+      - ./database:/app/database
+      - ./logs:/app/logs
+      - ./data:/app/data
+    environment:
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+    restart: unless-stopped

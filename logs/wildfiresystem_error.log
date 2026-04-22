@@ -1,0 +1,156 @@
+2026-04-22 23:27:46 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:27:56 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:27:58 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:27:59 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:00 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:29:36 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-23 00:24:40 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:01 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:02 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:03 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:04 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:04 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:05 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:06 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:07 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:07 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:07 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:11 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:12 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:13 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:16 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:18 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:20 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:22 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:25 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:26 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:37:08 - WildfireSystem - ERROR - Regional scan error: 'risk_level'
+2026-04-23 00:39:20 - WildfireSystem - ERROR - Regional scan error: 'risk_level'
+2026-04-23 00:54:55 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: index 20 is out of bounds for axis 0 with size 20
+2026-04-23 00:55:15 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all_indices'
+2026-04-23 00:57:02 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: index 20 is out of bounds for axis 0 with size 20
+2026-04-23 00:58:50 - WildfireSystem - ERROR - Frontend analysis error: 'DataPreprocessor' object has no attribute 'transform'
+2026-04-23 01:11:12 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: index 26 is out of bounds for axis 0 with size 26
+2026-04-23 01:11:23 - WildfireSystem - ERROR - Frontend analysis error: X has 10 features, but MinMaxScaler is expecting 13 features as input.
+2026-04-23 01:40:23 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:40:31 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:06 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:08 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:09 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:09 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:10 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Dry Grassland: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - River Bank: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Urban Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Agricultural Zone: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:17 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Southern Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:17 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Eastern Drylands: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Northern Hills: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Forest Edge: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Urban Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Western Scrub: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Rajpur Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - City Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Mussoorie Foothills: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Bannerghatta Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Eastern Valley: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Western Timber: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - City Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Northern Outskirts: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:20 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Dal Lake Area: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:20 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Western Scrub: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:20 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Eastern Dry Zone: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:21 - WildfireSystem - ERROR - Failed to scan zone Srinagar - City Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Western Valley: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Eastern Hills: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Northern Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Multi-zone scan error: 'total_zones'
+2026-04-23 01:43:46 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:43:53 - WildfireSystem - ERROR - Frontend analysis error: index 4 is out of bounds for axis 0 with size 4
+2026-04-23 01:47:56 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:48:05 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:26 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:50:32 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:36 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:36 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:36 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:39 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:39 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Heat Wave failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Drought failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario High Wind failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Storm failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Normal Conditions failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Heat Wave failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Drought failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario High Wind failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Storm failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Normal Conditions failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Heat Wave failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Drought failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario High Wind failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Storm failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Normal Conditions failed: 'anfis_output'
+2026-04-23 01:50:51 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:56 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:57 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:00 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:01 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:01 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:02 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:02 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:02 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:54:30 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:54:38 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:07 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:12 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:22 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:28 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:32 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:36 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:39 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 02:07:11 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:19 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:20 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:21 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:21 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:21 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:25 - WildfireSystem - ERROR - Failed to scan region Dehradun, Uttarakhand: name 'confidence' is not defined
+2026-04-23 02:07:25 - WildfireSystem - ERROR - Failed to scan region Shimla, Himachal Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:25 - WildfireSystem - ERROR - Failed to scan region Srinagar, J&K: name 'confidence' is not defined
+2026-04-23 02:07:26 - WildfireSystem - ERROR - Failed to scan region Gangtok, Sikkim: name 'confidence' is not defined
+2026-04-23 02:07:26 - WildfireSystem - ERROR - Failed to scan region Itanagar, Arunachal Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:27 - WildfireSystem - ERROR - Failed to scan region Kohima, Nagaland: name 'confidence' is not defined
+2026-04-23 02:07:28 - WildfireSystem - ERROR - Failed to scan region Imphal, Manipur: name 'confidence' is not defined
+2026-04-23 02:07:28 - WildfireSystem - ERROR - Failed to scan region Aizawl, Mizoram: name 'confidence' is not defined
+2026-04-23 02:07:29 - WildfireSystem - ERROR - Failed to scan region Shillong, Meghalaya: name 'confidence' is not defined
+2026-04-23 02:07:29 - WildfireSystem - ERROR - Failed to scan region Guwahati, Assam: name 'confidence' is not defined
+2026-04-23 02:07:29 - WildfireSystem - ERROR - Failed to scan region Agartala, Tripura: name 'confidence' is not defined
+2026-04-23 02:07:30 - WildfireSystem - ERROR - Failed to scan region Kolkata, West Bengal: name 'confidence' is not defined
+2026-04-23 02:07:30 - WildfireSystem - ERROR - Failed to scan region Bhubaneswar, Odisha: name 'confidence' is not defined
+2026-04-23 02:07:30 - WildfireSystem - ERROR - Failed to scan region Raipur, Chhattisgarh: name 'confidence' is not defined
+2026-04-23 02:07:31 - WildfireSystem - ERROR - Failed to scan region Bhopal, Madhya Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:31 - WildfireSystem - ERROR - Failed to scan region Nagpur, Maharashtra: name 'confidence' is not defined
+2026-04-23 02:07:31 - WildfireSystem - ERROR - Failed to scan region Bengaluru, Karnataka: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Thiruvananthapuram, Kerala: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Chennai, Tamil Nadu: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Amaravati, Andhra Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Hyderabad, Telangana: name 'confidence' is not defined
+2026-04-23 02:07:33 - WildfireSystem - ERROR - Failed to scan region Panaji, Goa: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Failed to scan region Ahmedabad, Gujarat: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Failed to scan region Jaipur, Rajasthan: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Failed to scan region New Delhi: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Regional scan error: 'average_risk'
+2026-04-23 02:08:04 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:10:38 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined

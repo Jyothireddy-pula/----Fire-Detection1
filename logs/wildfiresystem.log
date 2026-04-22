@@ -1,0 +1,643 @@
+2026-04-22 22:18:27 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:18:44 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:20:30 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:22:43 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:31:08 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:37:46 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.3978290683670825), 'mae': np.float64(0.28467298819066567), 'accuracy': np.float64(0.9444444444444444), 'training_time': 396.7645561695099, 'history': {'loss': [np.float64(0.4995936365752142), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28), np.float64(1.0343302880464345e-28)]}}, Time: 396.76s
+2026-04-22 22:40:32 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 22:46:56 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:47:49 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 22:47:53 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.7098257510939819), 'mae': np.float64(0.4648244809253239), 'accuracy': np.float64(0.6944444444444444), 'training_time': 4.040441036224365, 'history': {'loss': [np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28), np.float64(1.3770977042828293e-28)]}}, Time: 4.04s
+2026-04-22 23:01:25 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:01:42 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:19:58 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:20:06 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.9032852427711697), 'mae': np.float64(0.7647671171340107), 'accuracy': np.float64(0.3611111111111111), 'training_time': 7.541565895080566, 'history': {'loss': [np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15), np.float64(4.3275473756374765e-15)]}}, Time: 7.54s
+2026-04-22 23:20:28 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:21:28 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(37390.64905409133), 'mae': np.float64(30637.03613998943), 'accuracy': np.float64(0.0), 'training_time': 59.67253303527832, 'history': {'loss': [np.float64(5.53307815983931e-15), np.float64(8.315565303276797e-14), np.float64(1.263311448010455e-12), np.float64(3.2981453241846625e-11), np.float64(2.893469131721503e-09), np.float64(0.061084323940792405), np.float64(0.17104458542009124), np.float64(0.17815619754637382), np.float64(0.17816368883964773), np.float64(0.17816386659613614), np.float64(0.17816399240454264), np.float64(0.17816408750958015), np.float64(0.17816415850165654), np.float64(0.1781642124636324), np.float64(0.17816426158618207), np.float64(0.17816429542294562), np.float64(0.17816432545648014), np.float64(0.17816435174327072), np.float64(0.17816437039783942), np.float64(0.17816439310357268), np.float64(0.17816441117947082), np.float64(0.1781644235727478), np.float64(0.1781644397109481), np.float64(0.17816444965978853), np.float64(0.17816446252741794), np.float64(0.1781644770269047), np.float64(0.17816448995858084), np.float64(0.1781645011816515), np.float64(0.1781645203515855), np.float64(0.1781645322620709)]}}, Time: 59.67s
+2026-04-22 23:22:53 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:22:54 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.9950074012321333), 'mae': np.float64(0.8325936593227884), 'accuracy': np.float64(0.2777777777777778), 'training_time': 0.4204990863800049, 'history': {'loss': [np.float64(4.41718738136522e-15)]}}, Time: 0.42s
+2026-04-22 23:23:31 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:23:56 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:24:30 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:24:30 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(1.2801909579781015), 'mae': np.float64(0.9722222222222222), 'accuracy': np.float64(0.3333333333333333), 'training_time': 0.40302610397338867, 'history': {'loss': [np.float64(2.2692978346657155e-15)]}}, Time: 0.40s
+2026-04-22 23:25:03 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:25:03 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.4117770195007324, 'history': {'loss': [np.float64(1.6145115888281293e-14)]}}, Time: 0.41s
+2026-04-22 23:26:16 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 23:27:46 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.23s
+2026-04-22 23:27:46 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:27:56 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:27:56 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:27:58 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:27:58 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:27:59 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:27:59 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:00 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:28:00 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:28:02 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:28:02 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:29:23 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 23:29:35 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.16s
+2026-04-22 23:29:36 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all'
+2026-04-22 23:31:19 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 23:31:30 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.15s
+2026-04-22 23:31:30 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.305232211816147), 'DMC': np.float64(nan), 'DC': 20.652, 'ISI': np.float64(0.0006658775987678751), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-22 23:32:17 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.14s
+2026-04-22 23:32:17 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:19 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:19 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:25 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:25 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:41 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:41 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:42 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:42 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:43 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:44 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:45 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:45 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:32:45 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:32:45 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:18 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:33:18 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.2272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:20 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:33:20 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 19.877200000000002, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:21 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:33:21 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 19.877200000000002, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:21 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:33:21 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.5272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:22 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:33:22 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.5272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:22 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:33:22 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.5272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:33:26 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:33:26 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.305232211816147), 'DMC': np.float64(nan), 'DC': 20.951999999999998, 'ISI': np.float64(0.0006658775987678751), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-22 23:33:27 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-22 23:33:27 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.305232211816147), 'DMC': np.float64(nan), 'DC': 20.951999999999998, 'ISI': np.float64(0.0006658775987678751), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-22 23:33:31 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.15s
+2026-04-22 23:33:31 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.632782403079872), 'DMC': np.float64(nan), 'DC': 20.384999999999998, 'ISI': np.float64(0.0010921395464125417), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.57
+2026-04-22 23:33:32 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-22 23:33:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.632782403079872), 'DMC': np.float64(nan), 'DC': 20.384999999999998, 'ISI': np.float64(0.0010921395464125417), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.57
+2026-04-22 23:33:33 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-22 23:33:33 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.632782403079872), 'DMC': np.float64(nan), 'DC': 20.384999999999998, 'ISI': np.float64(0.0010921395464125417), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.57
+2026-04-22 23:33:34 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-22 23:33:34 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.632782403079872), 'DMC': np.float64(nan), 'DC': 20.384999999999998, 'ISI': np.float64(0.0010921395464125417), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.57
+2026-04-22 23:36:43 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.97, 'lon': 77.59}, Status: success, Time: 1.25s
+2026-04-22 23:36:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.04911076796715), 'DMC': np.float64(nan), 'DC': 20.2734, 'ISI': np.float64(0.0004721316760106452), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.66
+2026-04-22 23:36:57 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.25, 'lon': 77.41}, Status: success, Time: 0.14s
+2026-04-22 23:36:57 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.485188907447707), 'DMC': np.float64(nan), 'DC': 21.141, 'ISI': np.float64(0.0009414714063956623), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.88
+2026-04-22 23:37:04 - WildfireSystem - INFO - Using cached weather data for 16.5, 80.51
+2026-04-22 23:37:04 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.838317455327683), 'DMC': np.float64(nan), 'DC': 20.5272, 'ISI': np.float64(0.0004933816189190138), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.59
+2026-04-22 23:37:22 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.14s
+2026-04-22 23:37:22 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.409212451892216), 'DMC': np.float64(nan), 'DC': 18.2808, 'ISI': np.float64(0.0006972492060556832), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.65
+2026-04-22 23:48:18 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 23:48:25 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.25s
+2026-04-22 23:48:25 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.572833547301073), 'DMC': np.float64(nan), 'DC': 20.951999999999998, 'ISI': np.float64(0.0006878809686514203), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-22 23:48:34 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.14s
+2026-04-22 23:48:34 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.486968135913656), 'DMC': np.float64(nan), 'DC': 20.663999999999998, 'ISI': np.float64(0.0005999552659515916), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.57
+2026-04-22 23:48:40 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.13s
+2026-04-22 23:48:40 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.53584325335615), 'DMC': np.float64(nan), 'DC': 20.529, 'ISI': np.float64(0.0005328895986262155), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.61
+2026-04-22 23:48:58 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:49:27 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:49:27 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.37386608123779297, 'history': {'loss': [np.float64(5.6780841439140945e-15)]}}, Time: 0.37s
+2026-04-22 23:52:19 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 23:52:24 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.14s
+2026-04-22 23:52:24 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.486217626568006), 'DMC': np.float64(nan), 'DC': 20.6658, 'ISI': np.float64(0.0005998542299559726), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.57
+2026-04-22 23:52:29 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.13s
+2026-04-22 23:52:29 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.53584325335615), 'DMC': np.float64(nan), 'DC': 20.529, 'ISI': np.float64(0.0005328895986262155), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.61
+2026-04-22 23:52:39 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.38s
+2026-04-22 23:52:39 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.409212451892216), 'DMC': np.float64(nan), 'DC': 18.2808, 'ISI': np.float64(0.0006972492060556832), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.65
+2026-04-22 23:53:02 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 18.52, 'lon': 73.85}, Status: success, Time: 0.12s
+2026-04-22 23:53:02 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.97826887787666), 'DMC': np.float64(nan), 'DC': 20.4696, 'ISI': np.float64(0.0004999368831715222), 'BUI': np.float64(nan), 'FWI': np.float64(nan)}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.64
+2026-04-22 23:53:16 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:53:16 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.23010492324829102, 'history': {'loss': [np.float64(4.197287047289701e-15)]}}, Time: 0.23s
+2026-04-22 23:56:23 - WildfireSystem - INFO - Models loaded successfully
+2026-04-22 23:56:36 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.14s
+2026-04-22 23:56:36 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.409212451892216), 'DMC': 0, 'DC': 17.9808, 'ISI': np.float64(0.0006972492060556832), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.33
+2026-04-22 23:56:49 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 19.07, 'lon': 72.87}, Status: success, Time: 0.28s
+2026-04-22 23:56:49 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.953739650601065), 'DMC': 0, 'DC': 20.4594, 'ISI': np.float64(0.0004921730736173268), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.33
+2026-04-22 23:56:56 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.13s
+2026-04-22 23:56:56 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.572833547301073), 'DMC': 0, 'DC': 20.652, 'ISI': np.float64(0.0006878809686514203), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.32
+2026-04-22 23:57:05 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.12s
+2026-04-22 23:57:05 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.580504005700192), 'DMC': 0, 'DC': 20.085, 'ISI': np.float64(0.0011086913637306526), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.42
+2026-04-22 23:59:15 - WildfireSystem - INFO - Starting training pipeline
+2026-04-22 23:59:15 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.24961400032043457, 'history': {'loss': [np.float64(1.589614076605734e-14)]}}, Time: 0.25s
+2026-04-23 00:00:20 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:00:33 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 19.07, 'lon': 72.87}, Status: success, Time: 0.20s
+2026-04-23 00:00:33 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.953739650601065), 'DMC': 0, 'DC': 20.7594, 'ISI': np.float64(0.0004921730736173268), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.33
+2026-04-23 00:00:38 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.12s
+2026-04-23 00:00:38 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.487718636976894), 'DMC': 0, 'DC': 20.6622, 'ISI': np.float64(0.0006000563160437154), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.42
+2026-04-23 00:00:48 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.15s
+2026-04-23 00:00:48 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.922515944120036), 'DMC': 0, 'DC': 20.43, 'ISI': np.float64(0.000507258010860844), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.42
+2026-04-23 00:01:05 - WildfireSystem - INFO - Using cached weather data for 19.07, 72.87
+2026-04-23 00:01:05 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.953739650601065), 'DMC': 0, 'DC': 20.7594, 'ISI': np.float64(0.0004921730736173268), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.33
+2026-04-23 00:01:29 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.97, 'lon': 77.59}, Status: success, Time: 0.18s
+2026-04-23 00:01:29 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.186387167289695), 'DMC': 0, 'DC': 20.2122, 'ISI': np.float64(0.00047671626749019115), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.37
+2026-04-23 00:02:21 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:02:33 - WildfireSystem - INFO - Using cached weather data for 12.97, 77.59
+2026-04-23 00:02:33 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.186387167289695), 'DMC': 0, 'DC': 19.9122, 'ISI': np.float64(0.00047671626749019115), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.37
+2026-04-23 00:02:41 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.13s
+2026-04-23 00:02:41 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.573171084706757), 'DMC': 0, 'DC': 20.650199999999998, 'ISI': np.float64(0.0006879317524710786), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.32
+2026-04-23 00:03:01 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:03:01 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.573171084706757), 'DMC': 0, 'DC': 20.9502, 'ISI': np.float64(0.0006879317524710786), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.32
+2026-04-23 00:03:06 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:03:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.573171084706757), 'DMC': 0, 'DC': 20.650199999999998, 'ISI': np.float64(0.0006879317524710786), 'BUI': 0.0, 'FWI': np.float64(0.0)}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.32
+2026-04-23 00:04:31 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 00:04:31 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.28392791748046875, 'history': {'loss': [np.float64(1.045181813740092e-14)]}}, Time: 0.28s
+2026-04-23 00:11:43 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 00:11:43 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.3333170413970947, 'history': {'loss': [np.float64(1.1149636037884601e-14)]}}, Time: 0.33s
+2026-04-23 00:20:09 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 00:20:10 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.2818765640258789, 'history': {'loss': [np.float64(1.4592392101302412e-14)]}}, Time: 0.28s
+2026-04-23 00:24:34 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:24:40 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.15s
+2026-04-23 00:24:40 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 12.891444444444444, 'Temperature': 27.95, 'RH': 94.0, 'Ws': 4.63, 'Rain': 0.0, 'FireRiskIndex': 12.891444444444444}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.85
+2026-04-23 00:24:40 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:01 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.16s
+2026-04-23 00:25:01 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:01 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:02 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:02 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:02 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:03 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:03 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:03 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:04 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:04 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:04 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:04 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:04 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:04 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:05 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:05 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:05 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:06 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:06 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:06 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:07 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:07 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:07 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:07 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:07 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:07 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:07 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:07 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:07 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:11 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.13s
+2026-04-23 00:25:11 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:25:11 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:12 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:25:12 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:25:12 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:13 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:25:13 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:25:13 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:16 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:25:16 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:25:16 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:18 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:25:18 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:25:18 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:20 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-23 00:25:20 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 12.891444444444444, 'Temperature': 27.95, 'RH': 94.0, 'Ws': 4.63, 'Rain': 0.0, 'FireRiskIndex': 12.891444444444444}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.85
+2026-04-23 00:25:20 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:22 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:25:22 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:25:22 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:25 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.13s
+2026-04-23 00:25:25 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 16.006999999999998, 'Temperature': 27.75, 'RH': 54.0, 'Ws': 1.03, 'Rain': 0.0, 'FireRiskIndex': 16.006999999999998}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.89
+2026-04-23 00:25:25 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:25:26 - WildfireSystem - INFO - Using cached weather data for 17.38, 78.48
+2026-04-23 00:25:26 - WildfireSystem - INFO - Prediction - Inputs: {'FWI': 16.006999999999998, 'Temperature': 27.75, 'RH': 54.0, 'Ws': 1.03, 'Rain': 0.0, 'FireRiskIndex': 16.006999999999998}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.89
+2026-04-23 00:25:26 - WildfireSystem - ERROR - Frontend analysis error: 'FFMC'
+2026-04-23 00:27:05 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:27:11 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.15s
+2026-04-23 00:27:11 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:27:20 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:27:20 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:28:08 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:28:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:28:14 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:28:14 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:28:18 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:28:18 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:28:25 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 00:28:25 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 19.048222222222222, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.048222222222222}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.97
+2026-04-23 00:31:59 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 00:31:59 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.5294973850250244, 'history': {'loss': [np.float64(5.6072400936870117e-14)]}}, Time: 0.53s
+2026-04-23 00:33:34 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:33:44 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.20s
+2026-04-23 00:33:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 18.451333333333334, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 18.451333333333334}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.83
+2026-04-23 00:33:59 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:33:59 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:34:04 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:04 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:34:08 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:17 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:17 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:24 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:24 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:31 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:31 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:36 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:36 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:39 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:39 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:43 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:34:46 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:46 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:50 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 9.935333333333332, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 9.935333333333332}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-23 00:34:53 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:53 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:34:58 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:34:58 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 18.451333333333334, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 18.451333333333334}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.83
+2026-04-23 00:35:06 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:35:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 14.193333333333333, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 14.193333333333333}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:36:52 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:37:00 - WildfireSystem - INFO - Starting regional scan for 20 regions
+2026-04-23 00:37:00 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.33, 'lon': 78.06}, Status: success, Time: 0.35s
+2026-04-23 00:37:00 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 80.95555555555555, 'DMC': 19.8125, 'DC': 28.694444444444443, 'ISI': 1.816, 'BUI': 29.75, 'FWI': 24.819311111111112, 'Temperature': 24.65, 'RH': 21.0, 'Ws': 3.06, 'Rain': 0.0, 'FireRiskIndex': 24.819311111111112}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.71
+2026-04-23 00:37:00 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.33s
+2026-04-23 00:37:00 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 76.71555555555555, 'DMC': 17.5625, 'DC': 23.394444444444446, 'ISI': 1.7173333333333334, 'BUI': 26.75, 'FWI': 20.391077777777777, 'Temperature': 15.11, 'RH': 33.0, 'Ws': 2.69, 'Rain': 0.0, 'FireRiskIndex': 20.391077777777777}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.89
+2026-04-23 00:37:01 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 33.78, 'lon': 76.08}, Status: success, Time: 0.95s
+2026-04-23 00:37:01 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 68.62222222222222, 'DMC': 11.375, 'DC': 13.277777777777779, 'ISI': 2.437333333333333, 'BUI': 18.5, 'FWI': 11.659411111111112, 'Temperature': -3.1, 'RH': 66.0, 'Ws': 5.39, 'Rain': 0.0, 'FireRiskIndex': 11.659411111111112}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.75
+2026-04-23 00:37:02 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 27.53, 'lon': 88.51}, Status: success, Time: 0.33s
+2026-04-23 00:37:02 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 75.71555555555555, 'DMC': 9.6875, 'DC': 22.144444444444446, 'ISI': 1.7040000000000002, 'BUI': 16.25, 'FWI': 14.26591111111111, 'Temperature': 12.86, 'RH': 75.0, 'Ws': 2.64, 'Rain': 0.0, 'FireRiskIndex': 14.26591111111111}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.80
+2026-04-23 00:37:02 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.21, 'lon': 94.72}, Status: success, Time: 0.34s
+2026-04-23 00:37:02 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 77.26666666666667, 'DMC': 5.9375, 'DC': 24.083333333333336, 'ISI': 1.2053333333333334, 'BUI': 11.25, 'FWI': 12.1069, 'Temperature': 16.35, 'RH': 95.0, 'Ws': 0.77, 'Rain': 0.0, 'FireRiskIndex': 12.1069}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.81
+2026-04-23 00:37:03 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.15, 'lon': 94.11}, Status: success, Time: 1.11s
+2026-04-23 00:37:03 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 78.26666666666667, 'DMC': 6.3125, 'DC': 25.333333333333336, 'ISI': 1.4293333333333333, 'BUI': 11.75, 'FWI': 13.2717, 'Temperature': 18.6, 'RH': 93.0, 'Ws': 1.61, 'Rain': 0.0, 'FireRiskIndex': 13.2717}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.80
+2026-04-23 00:37:03 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 24.8, 'lon': 93.93}, Status: success, Time: 0.33s
+2026-04-23 00:37:03 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 78.17777777777778, 'DMC': 11.375, 'DC': 25.22222222222222, 'ISI': 1.1706666666666667, 'BUI': 18.5, 'FWI': 16.42968888888889, 'Temperature': 18.4, 'RH': 66.0, 'Ws': 0.64, 'Rain': 0.0, 'FireRiskIndex': 16.42968888888889}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.82
+2026-04-23 00:37:04 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.72, 'lon': 92.93}, Status: success, Time: 0.95s
+2026-04-23 00:37:04 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 79.34666666666666, 'DMC': 8.0, 'DC': 26.683333333333334, 'ISI': 1.304, 'BUI': 14.0, 'FWI': 15.001133333333334, 'Temperature': 21.03, 'RH': 84.0, 'Ws': 1.14, 'Rain': 0.0, 'FireRiskIndex': 15.001133333333334}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.81
+2026-04-23 00:37:05 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 25.46, 'lon': 91.36}, Status: success, Time: 0.33s
+2026-04-23 00:37:05 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 76.84, 'DMC': 7.8125, 'DC': 23.55, 'ISI': 1.2826666666666666, 'BUI': 13.75, 'FWI': 13.217533333333334, 'Temperature': 15.39, 'RH': 85.0, 'Ws': 1.06, 'Rain': 0.0, 'FireRiskIndex': 13.217533333333334}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.82
+2026-04-23 00:37:05 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.2, 'lon': 91.77}, Status: success, Time: 0.33s
+2026-04-23 00:37:05 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 80.23555555555555, 'DMC': 8.9375, 'DC': 27.794444444444444, 'ISI': 1.5813333333333333, 'BUI': 15.25, 'FWI': 16.39487777777778, 'Temperature': 23.03, 'RH': 79.0, 'Ws': 2.18, 'Rain': 0.23, 'FireRiskIndex': 16.39487777777778}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.81
+2026-04-23 00:37:05 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.84, 'lon': 91.28}, Status: success, Time: 0.37s
+2026-04-23 00:37:05 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.40444444444444, 'DMC': 6.6875, 'DC': 29.255555555555553, 'ISI': 1.8266666666666667, 'BUI': 12.25, 'FWI': 16.023222222222223, 'Temperature': 25.66, 'RH': 91.0, 'Ws': 3.1, 'Rain': 0.0, 'FireRiskIndex': 16.023222222222223}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:37:06 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.32s
+2026-04-23 00:37:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 82.42666666666666, 'DMC': 7.0625, 'DC': 30.533333333333335, 'ISI': 2.3706666666666667, 'BUI': 12.75, 'FWI': 17.56646666666667, 'Temperature': 27.96, 'RH': 89.0, 'Ws': 5.14, 'Rain': 0.0, 'FireRiskIndex': 17.56646666666667}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:37:06 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 20.29, 'lon': 85.82}, Status: success, Time: 0.33s
+2026-04-23 00:37:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.96888888888888, 'DMC': 6.125, 'DC': 29.96111111111111, 'ISI': 1.6853333333333333, 'BUI': 11.5, 'FWI': 15.839344444444444, 'Temperature': 26.93, 'RH': 94.0, 'Ws': 2.57, 'Rain': 0.0, 'FireRiskIndex': 15.839344444444444}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.85
+2026-04-23 00:37:06 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.25, 'lon': 81.62}, Status: success, Time: 0.33s
+2026-04-23 00:37:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 84.50222222222223, 'DMC': 20.9375, 'DC': 33.12777777777778, 'ISI': 1.7893333333333334, 'BUI': 31.25, 'FWI': 27.874311111111112, 'Temperature': 32.63, 'RH': 15.0, 'Ws': 2.96, 'Rain': 0.0, 'FireRiskIndex': 27.874311111111112}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.88
+2026-04-23 00:37:07 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.25, 'lon': 77.41}, Status: success, Time: 0.34s
+2026-04-23 00:37:07 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.86222222222221, 'DMC': 20.5625, 'DC': 32.32777777777778, 'ISI': 2.0373333333333337, 'BUI': 30.75, 'FWI': 27.480411111111113, 'Temperature': 31.19, 'RH': 17.0, 'Ws': 3.89, 'Rain': 0.0, 'FireRiskIndex': 27.480411111111113}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.85
+2026-04-23 00:37:07 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.14, 'lon': 79.08}, Status: success, Time: 0.41s
+2026-04-23 00:37:07 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.35555555555555, 'DMC': 19.0625, 'DC': 31.694444444444446, 'ISI': 1.0, 'BUI': 28.75, 'FWI': 24.93111111111111, 'Temperature': 30.05, 'RH': 25.0, 'Ws': 0.0, 'Rain': 0.0, 'FireRiskIndex': 24.93111111111111}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.85
+2026-04-23 00:37:07 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.97, 'lon': 77.59}, Status: success, Time: 0.31s
+2026-04-23 00:37:07 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.79555555555555, 'DMC': 13.0625, 'DC': 29.744444444444444, 'ISI': 2.072, 'BUI': 20.75, 'FWI': 20.976511111111108, 'Temperature': 26.54, 'RH': 57.0, 'Ws': 4.02, 'Rain': 0.0, 'FireRiskIndex': 20.976511111111108}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.86
+2026-04-23 00:37:08 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 8.52, 'lon': 76.93}, Status: success, Time: 0.32s
+2026-04-23 00:37:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.25333333333333, 'DMC': 8.9375, 'DC': 31.566666666666666, 'ISI': 1.2746666666666666, 'BUI': 15.25, 'FWI': 18.1571, 'Temperature': 29.82, 'RH': 79.0, 'Ws': 1.03, 'Rain': 0.0, 'FireRiskIndex': 18.1571}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-23 00:37:08 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 00:37:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.10666666666667, 'DMC': 8.375, 'DC': 31.383333333333333, 'ISI': 1.96, 'BUI': 14.5, 'FWI': 18.451333333333334, 'Temperature': 29.49, 'RH': 82.0, 'Ws': 3.6, 'Rain': 0.0, 'FireRiskIndex': 18.451333333333334}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.83
+2026-04-23 00:37:08 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.32s
+2026-04-23 00:37:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 82.63111111111111, 'DMC': 11.375, 'DC': 30.78888888888889, 'ISI': 1.7466666666666666, 'BUI': 18.5, 'FWI': 19.979555555555557, 'Temperature': 28.42, 'RH': 66.0, 'Ws': 2.8, 'Rain': 0.0, 'FireRiskIndex': 19.979555555555557}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-23 00:37:08 - WildfireSystem - INFO - Regional scan completed: 20 regions scanned
+2026-04-23 00:37:08 - WildfireSystem - ERROR - Regional scan error: 'risk_level'
+2026-04-23 00:39:03 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:39:08 - WildfireSystem - INFO - Starting regional scan for 25 regions
+2026-04-23 00:39:09 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.33, 'lon': 78.06}, Status: success, Time: 0.53s
+2026-04-23 00:39:09 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 80.95555555555555, 'DMC': 19.8125, 'DC': 28.694444444444443, 'ISI': 1.816, 'BUI': 29.75, 'FWI': 24.819311111111112, 'Temperature': 24.65, 'RH': 21.0, 'Ws': 3.06, 'Rain': 0.0, 'FireRiskIndex': 24.819311111111112}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.71
+2026-04-23 00:39:09 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.32s
+2026-04-23 00:39:09 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 76.71555555555555, 'DMC': 17.5625, 'DC': 23.394444444444446, 'ISI': 1.7173333333333334, 'BUI': 26.75, 'FWI': 20.391077777777777, 'Temperature': 15.11, 'RH': 33.0, 'Ws': 2.69, 'Rain': 0.0, 'FireRiskIndex': 20.391077777777777}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.89
+2026-04-23 00:39:09 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 33.78, 'lon': 76.08}, Status: success, Time: 0.33s
+2026-04-23 00:39:09 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 68.62222222222222, 'DMC': 11.375, 'DC': 13.277777777777779, 'ISI': 2.437333333333333, 'BUI': 18.5, 'FWI': 11.659411111111112, 'Temperature': -3.1, 'RH': 66.0, 'Ws': 5.39, 'Rain': 0.0, 'FireRiskIndex': 11.659411111111112}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.75
+2026-04-23 00:39:10 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 27.53, 'lon': 88.51}, Status: success, Time: 0.19s
+2026-04-23 00:39:10 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 75.71555555555555, 'DMC': 9.6875, 'DC': 22.144444444444446, 'ISI': 1.7040000000000002, 'BUI': 16.25, 'FWI': 14.26591111111111, 'Temperature': 12.86, 'RH': 75.0, 'Ws': 2.64, 'Rain': 0.0, 'FireRiskIndex': 14.26591111111111}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.80
+2026-04-23 00:39:11 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.21, 'lon': 94.72}, Status: success, Time: 1.30s
+2026-04-23 00:39:11 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 77.26666666666667, 'DMC': 5.9375, 'DC': 24.083333333333336, 'ISI': 1.2053333333333334, 'BUI': 11.25, 'FWI': 12.1069, 'Temperature': 16.35, 'RH': 95.0, 'Ws': 0.77, 'Rain': 0.0, 'FireRiskIndex': 12.1069}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.81
+2026-04-23 00:39:11 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.15, 'lon': 94.11}, Status: success, Time: 0.33s
+2026-04-23 00:39:11 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 78.26666666666667, 'DMC': 6.3125, 'DC': 25.333333333333336, 'ISI': 1.4293333333333333, 'BUI': 11.75, 'FWI': 13.2717, 'Temperature': 18.6, 'RH': 93.0, 'Ws': 1.61, 'Rain': 0.0, 'FireRiskIndex': 13.2717}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.80
+2026-04-23 00:39:12 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 24.8, 'lon': 93.93}, Status: success, Time: 1.20s
+2026-04-23 00:39:12 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 78.17777777777778, 'DMC': 11.375, 'DC': 25.22222222222222, 'ISI': 1.1706666666666667, 'BUI': 18.5, 'FWI': 16.42968888888889, 'Temperature': 18.4, 'RH': 66.0, 'Ws': 0.64, 'Rain': 0.0, 'FireRiskIndex': 16.42968888888889}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.82
+2026-04-23 00:39:14 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.72, 'lon': 92.93}, Status: success, Time: 1.38s
+2026-04-23 00:39:14 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 79.34666666666666, 'DMC': 8.0, 'DC': 26.683333333333334, 'ISI': 1.304, 'BUI': 14.0, 'FWI': 15.001133333333334, 'Temperature': 21.03, 'RH': 84.0, 'Ws': 1.14, 'Rain': 0.0, 'FireRiskIndex': 15.001133333333334}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.81
+2026-04-23 00:39:14 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 25.46, 'lon': 91.36}, Status: success, Time: 0.33s
+2026-04-23 00:39:14 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 76.84, 'DMC': 7.8125, 'DC': 23.55, 'ISI': 1.2826666666666666, 'BUI': 13.75, 'FWI': 13.217533333333334, 'Temperature': 15.39, 'RH': 85.0, 'Ws': 1.06, 'Rain': 0.0, 'FireRiskIndex': 13.217533333333334}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.82
+2026-04-23 00:39:15 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.2, 'lon': 91.77}, Status: success, Time: 0.36s
+2026-04-23 00:39:15 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 80.23555555555555, 'DMC': 8.9375, 'DC': 27.794444444444444, 'ISI': 1.5813333333333333, 'BUI': 15.25, 'FWI': 16.39487777777778, 'Temperature': 23.03, 'RH': 79.0, 'Ws': 2.18, 'Rain': 0.23, 'FireRiskIndex': 16.39487777777778}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.81
+2026-04-23 00:39:15 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.84, 'lon': 91.28}, Status: success, Time: 0.33s
+2026-04-23 00:39:15 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.40444444444444, 'DMC': 6.6875, 'DC': 29.255555555555553, 'ISI': 1.8266666666666667, 'BUI': 12.25, 'FWI': 16.023222222222223, 'Temperature': 25.66, 'RH': 91.0, 'Ws': 3.1, 'Rain': 0.0, 'FireRiskIndex': 16.023222222222223}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:39:15 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.30s
+2026-04-23 00:39:15 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 82.42666666666666, 'DMC': 7.0625, 'DC': 30.533333333333335, 'ISI': 2.3706666666666667, 'BUI': 12.75, 'FWI': 17.56646666666667, 'Temperature': 27.96, 'RH': 89.0, 'Ws': 5.14, 'Rain': 0.0, 'FireRiskIndex': 17.56646666666667}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.83
+2026-04-23 00:39:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 20.29, 'lon': 85.82}, Status: success, Time: 0.33s
+2026-04-23 00:39:16 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.96888888888888, 'DMC': 6.125, 'DC': 29.96111111111111, 'ISI': 1.6853333333333333, 'BUI': 11.5, 'FWI': 15.839344444444444, 'Temperature': 26.93, 'RH': 94.0, 'Ws': 2.57, 'Rain': 0.0, 'FireRiskIndex': 15.839344444444444}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 0.85
+2026-04-23 00:39:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.25, 'lon': 81.62}, Status: success, Time: 0.33s
+2026-04-23 00:39:16 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 84.50222222222223, 'DMC': 20.9375, 'DC': 33.12777777777778, 'ISI': 1.7893333333333334, 'BUI': 31.25, 'FWI': 27.874311111111112, 'Temperature': 32.63, 'RH': 15.0, 'Ws': 2.96, 'Rain': 0.0, 'FireRiskIndex': 27.874311111111112}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.88
+2026-04-23 00:39:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.25, 'lon': 77.41}, Status: success, Time: 0.33s
+2026-04-23 00:39:16 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.86222222222221, 'DMC': 20.5625, 'DC': 32.32777777777778, 'ISI': 2.0373333333333337, 'BUI': 30.75, 'FWI': 27.480411111111113, 'Temperature': 31.19, 'RH': 17.0, 'Ws': 3.89, 'Rain': 0.0, 'FireRiskIndex': 27.480411111111113}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.85
+2026-04-23 00:39:17 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.14, 'lon': 79.08}, Status: success, Time: 0.33s
+2026-04-23 00:39:17 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.35555555555555, 'DMC': 19.0625, 'DC': 31.694444444444446, 'ISI': 1.0, 'BUI': 28.75, 'FWI': 24.93111111111111, 'Temperature': 30.05, 'RH': 25.0, 'Ws': 0.0, 'Rain': 0.0, 'FireRiskIndex': 24.93111111111111}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.85
+2026-04-23 00:39:17 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.97, 'lon': 77.59}, Status: success, Time: 0.33s
+2026-04-23 00:39:17 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.59555555555555, 'DMC': 13.25, 'DC': 29.494444444444444, 'ISI': 2.072, 'BUI': 21.0, 'FWI': 20.976511111111108, 'Temperature': 26.09, 'RH': 56.0, 'Ws': 4.02, 'Rain': 0.0, 'FireRiskIndex': 20.976511111111108}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.87
+2026-04-23 00:39:17 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 8.52, 'lon': 76.93}, Status: success, Time: 0.20s
+2026-04-23 00:39:17 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.25333333333333, 'DMC': 8.9375, 'DC': 31.566666666666666, 'ISI': 1.2746666666666666, 'BUI': 15.25, 'FWI': 18.1571, 'Temperature': 29.82, 'RH': 79.0, 'Ws': 1.03, 'Rain': 0.0, 'FireRiskIndex': 18.1571}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-23 00:39:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.57s
+2026-04-23 00:39:18 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.11555555555556, 'DMC': 8.375, 'DC': 31.394444444444446, 'ISI': 1.6853333333333333, 'BUI': 14.5, 'FWI': 18.14467777777778, 'Temperature': 29.51, 'RH': 82.0, 'Ws': 2.57, 'Rain': 0.0, 'FireRiskIndex': 18.14467777777778}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.83
+2026-04-23 00:39:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.32s
+2026-04-23 00:39:18 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 82.63111111111111, 'DMC': 11.375, 'DC': 30.78888888888889, 'ISI': 1.7466666666666666, 'BUI': 18.5, 'FWI': 19.979555555555557, 'Temperature': 28.42, 'RH': 66.0, 'Ws': 2.8, 'Rain': 0.0, 'FireRiskIndex': 19.979555555555557}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-23 00:39:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.32s
+2026-04-23 00:39:18 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 82.33333333333333, 'DMC': 13.625, 'DC': 30.416666666666668, 'ISI': 1.2746666666666666, 'BUI': 21.5, 'FWI': 20.809099999999997, 'Temperature': 27.75, 'RH': 54.0, 'Ws': 1.03, 'Rain': 0.0, 'FireRiskIndex': 20.809099999999997}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.87
+2026-04-23 00:39:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 15.49, 'lon': 73.82}, Status: success, Time: 0.43s
+2026-04-23 00:39:19 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 82.83555555555556, 'DMC': 11.5625, 'DC': 31.044444444444444, 'ISI': 1.4106666666666667, 'BUI': 18.75, 'FWI': 19.860244444444444, 'Temperature': 28.88, 'RH': 65.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 19.860244444444444}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.84
+2026-04-23 00:39:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.02, 'lon': 72.57}, Status: success, Time: 0.19s
+2026-04-23 00:39:19 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.78666666666666, 'DMC': 17.5625, 'DC': 32.233333333333334, 'ISI': 1.5493333333333332, 'BUI': 26.75, 'FWI': 24.7962, 'Temperature': 31.02, 'RH': 33.0, 'Ws': 2.06, 'Rain': 0.0, 'FireRiskIndex': 24.7962}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.80
+2026-04-23 00:39:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.91, 'lon': 75.78}, Status: success, Time: 0.34s
+2026-04-23 00:39:19 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.65333333333334, 'DMC': 20.9375, 'DC': 32.06666666666666, 'ISI': 1.8239999999999998, 'BUI': 31.25, 'FWI': 27.361966666666664, 'Temperature': 30.72, 'RH': 15.0, 'Ws': 3.09, 'Rain': 0.0, 'FireRiskIndex': 27.361966666666664}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.83
+2026-04-23 00:39:20 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.46s
+2026-04-23 00:39:20 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 83.37777777777778, 'DMC': 18.125, 'DC': 31.72222222222222, 'ISI': 1.4106666666666667, 'BUI': 27.5, 'FWI': 24.76268888888889, 'Temperature': 30.1, 'RH': 30.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 24.76268888888889}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.81
+2026-04-23 00:39:20 - WildfireSystem - INFO - Regional scan completed: 25 regions scanned
+2026-04-23 00:39:20 - WildfireSystem - ERROR - Regional scan error: 'risk_level'
+2026-04-23 00:44:11 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 00:44:12 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(0.0), 'mae': np.float64(0.0), 'accuracy': np.float64(1.0), 'training_time': 0.6614272594451904, 'history': {'loss': [np.float64(1.600065663587232e-14)]}}, Time: 0.66s
+2026-04-23 00:44:59 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:45:15 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.84, 'lon': 80.94}, Status: success, Time: 0.66s
+2026-04-23 00:45:15 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 11.510644444444441, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 11.510644444444441}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.74
+2026-04-23 00:45:26 - WildfireSystem - INFO - Using cached weather data for 26.84, 80.94
+2026-04-23 00:45:26 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 21.37691111111111, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 21.37691111111111}, Output: {'linguistic_risk_level': 'High Fire', 'action': 'immediate_alert'}, Confidence: 0.91
+2026-04-23 00:45:35 - WildfireSystem - INFO - Using cached weather data for 26.84, 80.94
+2026-04-23 00:45:35 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 11.510644444444441, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 11.510644444444441}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.74
+2026-04-23 00:45:46 - WildfireSystem - INFO - Using cached weather data for 26.84, 80.94
+2026-04-23 00:45:46 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 9.866266666666665, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 9.866266666666665}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.67
+2026-04-23 00:46:00 - WildfireSystem - INFO - Using cached weather data for 26.84, 80.94
+2026-04-23 00:46:00 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 9.866266666666665, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 9.866266666666665}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.67
+2026-04-23 00:46:04 - WildfireSystem - INFO - Using cached weather data for 26.84, 80.94
+2026-04-23 00:46:04 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 9.866266666666665, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 9.866266666666665}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.67
+2026-04-23 00:46:06 - WildfireSystem - INFO - Using cached weather data for 26.84, 80.94
+2026-04-23 00:46:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 81.56888888888889, 'DMC': 14.9375, 'DC': 29.46111111111111, 'ISI': 1.4106666666666667, 'BUI': 23.25, 'FWI': 9.866266666666665, 'Temperature': 26.03, 'RH': 47.0, 'Ws': 1.54, 'Rain': 0.0, 'FireRiskIndex': 9.866266666666665}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.67
+2026-04-23 00:54:55 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:54:55 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: index 20 is out of bounds for axis 0 with size 20
+2026-04-23 00:55:15 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 1.38s
+2026-04-23 00:55:15 - WildfireSystem - ERROR - Frontend analysis error: 'FWICalculator' object has no attribute 'calculate_all_indices'
+2026-04-23 00:57:02 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 00:57:02 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: index 20 is out of bounds for axis 0 with size 20
+2026-04-23 00:58:50 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.89s
+2026-04-23 00:58:50 - WildfireSystem - ERROR - Frontend analysis error: 'DataPreprocessor' object has no attribute 'transform'
+2026-04-23 01:08:06 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:08:07 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(9.20876309947985), 'mae': np.float64(3.229011391866396), 'accuracy': np.float64(0.05263157894736842), 'training_time': 0.7399101257324219, 'history': {'loss': [np.float64(2.3517896947102418e-14)]}}, Time: 0.74s
+2026-04-23 01:09:13 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:09:40 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:09:46 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(2.5902428841651477), 'mae': np.float64(2.102406604431933), 'accuracy': np.float64(0.07894736842105263), 'training_time': 5.083503484725952, 'history': {'loss': [np.float64(8.627463291090574e-15)]}}, Time: 5.08s
+2026-04-23 01:10:19 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:11:12 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 01:11:12 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: index 26 is out of bounds for axis 0 with size 26
+2026-04-23 01:11:23 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.36s
+2026-04-23 01:11:23 - WildfireSystem - ERROR - Frontend analysis error: X has 10 features, but MinMaxScaler is expecting 13 features as input.
+2026-04-23 01:20:04 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:20:09 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(2.217980861994781), 'mae': np.float64(1.8694079377226593), 'accuracy': np.float64(0.09210526315789473), 'training_time': 4.6308369636535645, 'history': {'loss': [{'train': np.float64(5.40795051668594e-15), 'val': np.float64(0.5870315773883409)}]}}, Time: 4.63s
+2026-04-23 01:20:59 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:21:30 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:30:52 - WildfireSystem - INFO - Model Training - Model: PSO-ANFIS, Metrics: {'rmse': np.float64(3.115938054383172), 'mae': np.float64(2.0409555419862504), 'accuracy': np.float64(0.039473684210526314), 'training_time': 560.4414510726929, 'history': {'loss': [np.float64(0.4558669122575702), np.float64(0.4636870180569721), np.float64(0.4581677901989874), np.float64(0.4403385875553031), np.float64(0.46329367319842446), np.float64(0.4483999469733756), np.float64(0.4514146340077164), np.float64(0.4597286282303531), np.float64(0.45807059380091064), np.float64(0.46400102826337786), np.float64(0.4559723228466456), np.float64(0.45170281730211453), np.float64(0.458194562820997), np.float64(0.45152032167787276), np.float64(0.45532416105481205), np.float64(0.44793186731533835), np.float64(0.44999986790332347), np.float64(0.4665466010557545), np.float64(0.4443935705712883), np.float64(0.4503907311512248), np.float64(0.45840409165267326), np.float64(0.4557006796535126), np.float64(0.4455114947807273), np.float64(0.4509522867380876), np.float64(0.4557494760826558), np.float64(0.4534808486738631), np.float64(0.44950877201683503), np.float64(0.4577644014593087), np.float64(0.4480885393728398), np.float64(0.4471073982010748), np.float64(0.44510536406314444), np.float64(0.44028468956018), np.float64(0.44860077942818766), np.float64(0.4523788107531316), np.float64(0.4590274848059023), np.float64(0.44329559217016173), np.float64(0.4417361466316667), np.float64(0.4516085150627783), np.float64(0.4593633976547337), np.float64(0.43889598040469496), np.float64(0.43203216380282466), np.float64(0.4332932423049775), np.float64(0.4387126948387079), np.float64(0.4463976405606796), np.float64(0.44075893157876667), np.float64(0.4449024039325501), np.float64(0.4397109224906517), np.float64(0.4464225535986204), np.float64(0.4317390858294837), np.float64(0.44529546425011934), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647), np.float64(0.43537503014192647)]}}, Time: 560.44s
+2026-04-23 01:33:32 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:33:46 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:33:46 - WildfireSystem - INFO - Model Training - Model: Random Forest, Metrics: {'rmse': np.float64(0.12126781251816648), 'mae': np.float64(0.014705882352941176), 'accuracy': np.float64(0.9852941176470589), 'training_time': 0.1341261863708496, 'history': {'loss': []}}, Time: 0.13s
+2026-04-23 01:40:23 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 01:40:23 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:40:31 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.43s
+2026-04-23 01:40:31 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:06 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 1.17s
+2026-04-23 01:42:06 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.48s
+2026-04-23 01:42:06 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:08 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:42:08 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:09 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:42:09 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:09 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:42:09 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:10 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:42:10 - WildfireSystem - ERROR - Frontend analysis error: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:14 - WildfireSystem - INFO - Starting multi-zone scan with 5 workers
+2026-04-23 01:42:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.502, 'lon': 80.644}, Status: success, Time: 2.14s
+2026-04-23 01:42:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.514, 'lon': 80.652}, Status: success, Time: 2.14s
+2026-04-23 01:42:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.51, 'lon': 80.65}, Status: success, Time: 2.15s
+2026-04-23 01:42:16 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.498, 'lon': 80.642}, Status: success, Time: 2.14s
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Dry Grassland: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - River Bank: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Urban Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:16 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Agricultural Zone: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:17 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.365, 'lon': 78.475}, Status: success, Time: 0.68s
+2026-04-23 01:42:17 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.395, 'lon': 78.505}, Status: success, Time: 0.68s
+2026-04-23 01:42:17 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Southern Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:17 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Eastern Drylands: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.4, 'lon': 78.48}, Status: success, Time: 1.69s
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Northern Hills: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.506, 'lon': 80.648}, Status: success, Time: 4.04s
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Amaravati - Forest Edge: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.385, 'lon': 78.486}, Status: success, Time: 2.01s
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Urban Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.375, 'lon': 78.455}, Status: success, Time: 1.32s
+2026-04-23 01:42:18 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.325, 'lon': 78.055}, Status: success, Time: 1.32s
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Hyderabad - Western Scrub: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:18 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Rajpur Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.327, 'lon': 78.032}, Status: success, Time: 0.98s
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - City Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.34, 'lon': 78.06}, Status: success, Time: 0.98s
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Mussoorie Foothills: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.91, 'lon': 77.58}, Status: success, Time: 0.99s
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.315, 'lon': 78.045}, Status: success, Time: 1.00s
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.335, 'lon': 78.02}, Status: success, Time: 0.99s
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Bannerghatta Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Eastern Valley: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Dehradun - Western Timber: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.971, 'lon': 77.594}, Status: success, Time: 0.45s
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - City Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.02, 'lon': 77.59}, Status: success, Time: 0.31s
+2026-04-23 01:42:19 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Northern Outskirts: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:20 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 34.08, 'lon': 74.8}, Status: success, Time: 0.65s
+2026-04-23 01:42:20 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.93, 'lon': 77.53}, Status: success, Time: 0.66s
+2026-04-23 01:42:20 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.95, 'lon': 77.65}, Status: success, Time: 0.66s
+2026-04-23 01:42:20 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Dal Lake Area: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:20 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Western Scrub: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:20 - WildfireSystem - ERROR - Failed to scan zone Bengaluru - Eastern Dry Zone: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:21 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 34.085, 'lon': 74.797}, Status: success, Time: 1.52s
+2026-04-23 01:42:21 - WildfireSystem - ERROR - Failed to scan zone Srinagar - City Center: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 34.07, 'lon': 74.785}, Status: success, Time: 2.12s
+2026-04-23 01:42:22 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 34.09, 'lon': 74.82}, Status: success, Time: 2.12s
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Western Valley: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Eastern Hills: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 34.1, 'lon': 74.81}, Status: success, Time: 2.66s
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Failed to scan zone Srinagar - Northern Forest: FWICalculator.compute_all() got an unexpected keyword argument 'ws'
+2026-04-23 01:42:22 - WildfireSystem - INFO - Multi-zone scan completed: 0 zones scanned
+2026-04-23 01:42:22 - WildfireSystem - ERROR - Multi-zone scan error: 'total_zones'
+2026-04-23 01:43:46 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 01:43:46 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:43:52 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.50s
+2026-04-23 01:43:53 - WildfireSystem - ERROR - Frontend analysis error: index 4 is out of bounds for axis 0 with size 4
+2026-04-23 01:45:51 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:45:51 - WildfireSystem - INFO - Model Training - Model: Random Forest, Metrics: {'rmse': np.float64(1.0218207509435417), 'mae': np.float64(1.0147058823529411), 'accuracy': np.float64(0.0), 'training_time': 0.22420001029968262, 'history': {'loss': []}}, Time: 0.22s
+2026-04-23 01:46:13 - WildfireSystem - INFO - Starting training pipeline
+2026-04-23 01:46:14 - WildfireSystem - INFO - Model Training - Model: Random Forest, Metrics: {'rmse': np.float64(0.12126781251816648), 'mae': np.float64(0.014705882352941176), 'accuracy': np.float64(0.9852941176470589), 'training_time': 0.2554590702056885, 'history': {'loss': []}}, Time: 0.26s
+2026-04-23 01:47:56 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 01:47:56 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:48:05 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 19.07, 'lon': 72.87}, Status: success, Time: 0.43s
+2026-04-23 01:48:05 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:26 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 01:50:26 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:50:32 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.38s
+2026-04-23 01:50:32 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:36 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:36 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:36 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:36 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:36 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:36 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:37 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:37 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:38 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:38 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:38 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:38 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:39 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:39 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 01:50:39 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Heat Wave failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Drought failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario High Wind failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Storm failed: 'anfis_output'
+2026-04-23 01:50:44 - WildfireSystem - ERROR - Scenario Normal Conditions failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Heat Wave failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Drought failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario High Wind failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Storm failed: 'anfis_output'
+2026-04-23 01:50:46 - WildfireSystem - ERROR - Scenario Normal Conditions failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Heat Wave failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Drought failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario High Wind failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Storm failed: 'anfis_output'
+2026-04-23 01:50:47 - WildfireSystem - ERROR - Scenario Normal Conditions failed: 'anfis_output'
+2026-04-23 01:50:51 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.34s
+2026-04-23 01:50:51 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:56 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:50:56 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:50:57 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:50:57 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:00 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.45s
+2026-04-23 01:51:00 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:01 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-23 01:51:01 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:01 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-23 01:51:01 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:02 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-23 01:51:02 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:02 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-23 01:51:02 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:51:02 - WildfireSystem - INFO - Using cached weather data for 22.57, 88.36
+2026-04-23 01:51:02 - WildfireSystem - ERROR - Frontend analysis error: 'anfis_output'
+2026-04-23 01:54:30 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 01:54:30 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:54:37 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.40s
+2026-04-23 01:54:38 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.819660757711105, 'DMC': 53.38347459027344, 'DC': 20.772, 'ISI': 0.0007075053650030947, 'BUI': 46.20451717456362, 'FWI': 0.000984087645665623, 'Temperature': 30.1, 'RH': 28.0, 'Ws': 1.03, 'Rain': 0.0, 'Month': 6}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.27
+2026-04-23 01:54:38 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:07 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:55:07 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.819660757711105, 'DMC': 55.68275830738196, 'DC': 20.122, 'ISI': 0.0007075053650030947, 'BUI': 48.091528517119336, 'FWI': 0.00101647699114981, 'Temperature': 30.1, 'RH': 28.0, 'Ws': 1.03, 'Rain': 0.0, 'Month': 12}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.26
+2026-04-23 01:55:07 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:12 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:55:12 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.819660757711105, 'DMC': 55.68275830738196, 'DC': 20.122, 'ISI': 0.0007075053650030947, 'BUI': 48.091528517119336, 'FWI': 0.00101647699114981, 'Temperature': 30.1, 'RH': 28.0, 'Ws': 1.03, 'Rain': 0.0, 'Month': 1}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.26
+2026-04-23 01:55:12 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:22 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:55:22 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.819660757711105, 'DMC': 54.517902056964346, 'DC': 20.472, 'ISI': 0.0007075053650030947, 'BUI': 47.13797189320583, 'FWI': 0.0010001407512622322, 'Temperature': 30.1, 'RH': 28.0, 'Ws': 1.03, 'Rain': 0.0, 'Month': 3}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.27
+2026-04-23 01:55:22 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:28 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:55:28 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.819660757711105, 'DMC': 53.38347459027344, 'DC': 20.772, 'ISI': 0.0007075053650030947, 'BUI': 46.20451717456362, 'FWI': 0.000984087645665623, 'Temperature': 30.1, 'RH': 28.0, 'Ws': 1.03, 'Rain': 0.0, 'Month': 6}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.27
+2026-04-23 01:55:28 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:32 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 01:55:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.819660757711105, 'DMC': 53.38347459027344, 'DC': 20.772, 'ISI': 0.0007075053650030947, 'BUI': 46.20451717456362, 'FWI': 0.000984087645665623, 'Temperature': 30.1, 'RH': 28.0, 'Ws': 1.03, 'Rain': 0.0, 'Month': 8}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.27
+2026-04-23 01:55:32 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:35 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.54s
+2026-04-23 01:55:36 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 25.677691278637027, 'DMC': 52.068665885136426, 'DC': 20.3868, 'ISI': 0.0007808044973168731, 'BUI': 45.0152617033051, 'FWI': 0.001063370727380893, 'Temperature': 27.96, 'RH': 89.0, 'Ws': 3.6, 'Rain': 0.0, 'Month': 8}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.27
+2026-04-23 01:55:36 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 01:55:39 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.47s
+2026-04-23 01:55:39 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 24.2877189131423, 'DMC': 52.83421666322525, 'DC': 20.349, 'ISI': 0.0005170981547557906, 'BUI': 45.66841198448484, 'FWI': 0.0007124864225009862, 'Temperature': 27.75, 'RH': 57.0, 'Ws': 1.54, 'Rain': 0.0, 'Month': 8}, Output: {'linguistic_risk_level': 'Extreme Fire', 'action': 'immediate_alert'}, Confidence: 0.27
+2026-04-23 01:55:39 - WildfireSystem - ERROR - Failed to initialize SHAP explainer: 'NoneType' object has no attribute 'predict'
+2026-04-23 02:07:05 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 02:07:11 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 19.07, 'lon': 72.87}, Status: success, Time: 0.44s
+2026-04-23 02:07:11 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:19 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.22s
+2026-04-23 02:07:19 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:20 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 02:07:20 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:21 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 02:07:21 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:21 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 02:07:21 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:21 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 02:07:21 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:07:24 - WildfireSystem - INFO - Starting regional scan for 25 regions
+2026-04-23 02:07:25 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.33, 'lon': 78.06}, Status: success, Time: 0.39s
+2026-04-23 02:07:25 - WildfireSystem - ERROR - Failed to scan region Dehradun, Uttarakhand: name 'confidence' is not defined
+2026-04-23 02:07:25 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.32s
+2026-04-23 02:07:25 - WildfireSystem - ERROR - Failed to scan region Shimla, Himachal Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:25 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 33.78, 'lon': 76.08}, Status: success, Time: 0.43s
+2026-04-23 02:07:25 - WildfireSystem - ERROR - Failed to scan region Srinagar, J&K: name 'confidence' is not defined
+2026-04-23 02:07:26 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 27.53, 'lon': 88.51}, Status: success, Time: 0.33s
+2026-04-23 02:07:26 - WildfireSystem - ERROR - Failed to scan region Gangtok, Sikkim: name 'confidence' is not defined
+2026-04-23 02:07:26 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.21, 'lon': 94.72}, Status: success, Time: 0.34s
+2026-04-23 02:07:26 - WildfireSystem - ERROR - Failed to scan region Itanagar, Arunachal Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:27 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.15, 'lon': 94.11}, Status: success, Time: 0.36s
+2026-04-23 02:07:27 - WildfireSystem - ERROR - Failed to scan region Kohima, Nagaland: name 'confidence' is not defined
+2026-04-23 02:07:28 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 24.8, 'lon': 93.93}, Status: success, Time: 1.44s
+2026-04-23 02:07:28 - WildfireSystem - ERROR - Failed to scan region Imphal, Manipur: name 'confidence' is not defined
+2026-04-23 02:07:28 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.72, 'lon': 92.93}, Status: success, Time: 0.33s
+2026-04-23 02:07:28 - WildfireSystem - ERROR - Failed to scan region Aizawl, Mizoram: name 'confidence' is not defined
+2026-04-23 02:07:29 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 25.46, 'lon': 91.36}, Status: success, Time: 0.33s
+2026-04-23 02:07:29 - WildfireSystem - ERROR - Failed to scan region Shillong, Meghalaya: name 'confidence' is not defined
+2026-04-23 02:07:29 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.2, 'lon': 91.77}, Status: success, Time: 0.33s
+2026-04-23 02:07:29 - WildfireSystem - ERROR - Failed to scan region Guwahati, Assam: name 'confidence' is not defined
+2026-04-23 02:07:29 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.84, 'lon': 91.28}, Status: success, Time: 0.33s
+2026-04-23 02:07:29 - WildfireSystem - ERROR - Failed to scan region Agartala, Tripura: name 'confidence' is not defined
+2026-04-23 02:07:30 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.33s
+2026-04-23 02:07:30 - WildfireSystem - ERROR - Failed to scan region Kolkata, West Bengal: name 'confidence' is not defined
+2026-04-23 02:07:30 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 20.29, 'lon': 85.82}, Status: success, Time: 0.33s
+2026-04-23 02:07:30 - WildfireSystem - ERROR - Failed to scan region Bhubaneswar, Odisha: name 'confidence' is not defined
+2026-04-23 02:07:30 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.25, 'lon': 81.62}, Status: success, Time: 0.42s
+2026-04-23 02:07:30 - WildfireSystem - ERROR - Failed to scan region Raipur, Chhattisgarh: name 'confidence' is not defined
+2026-04-23 02:07:31 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.25, 'lon': 77.41}, Status: success, Time: 0.33s
+2026-04-23 02:07:31 - WildfireSystem - ERROR - Failed to scan region Bhopal, Madhya Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:31 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.14, 'lon': 79.08}, Status: success, Time: 0.33s
+2026-04-23 02:07:31 - WildfireSystem - ERROR - Failed to scan region Nagpur, Maharashtra: name 'confidence' is not defined
+2026-04-23 02:07:31 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.97, 'lon': 77.59}, Status: success, Time: 0.33s
+2026-04-23 02:07:31 - WildfireSystem - ERROR - Failed to scan region Bengaluru, Karnataka: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 8.52, 'lon': 76.93}, Status: success, Time: 0.33s
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Thiruvananthapuram, Kerala: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - INFO - Using cached weather data for 13.08, 80.27
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Chennai, Tamil Nadu: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.34s
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Amaravati, Andhra Pradesh: name 'confidence' is not defined
+2026-04-23 02:07:32 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.32s
+2026-04-23 02:07:32 - WildfireSystem - ERROR - Failed to scan region Hyderabad, Telangana: name 'confidence' is not defined
+2026-04-23 02:07:33 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 15.49, 'lon': 73.82}, Status: success, Time: 0.32s
+2026-04-23 02:07:33 - WildfireSystem - ERROR - Failed to scan region Panaji, Goa: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.02, 'lon': 72.57}, Status: success, Time: 0.83s
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Failed to scan region Ahmedabad, Gujarat: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.91, 'lon': 75.78}, Status: success, Time: 0.43s
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Failed to scan region Jaipur, Rajasthan: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.33s
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Failed to scan region New Delhi: name 'confidence' is not defined
+2026-04-23 02:07:34 - WildfireSystem - INFO - Regional scan completed: 0 regions scanned
+2026-04-23 02:07:34 - WildfireSystem - ERROR - Regional scan error: 'average_risk'
+2026-04-23 02:08:04 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 02:08:04 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
+2026-04-23 02:10:30 - WildfireSystem - INFO - Models loaded successfully
+2026-04-23 02:10:38 - WildfireSystem - INFO - Using cached weather data for 28.61, 77.23
+2026-04-23 02:10:38 - WildfireSystem - ERROR - Frontend analysis error: name 'confidence' is not defined
