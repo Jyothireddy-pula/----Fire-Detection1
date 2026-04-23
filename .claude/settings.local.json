@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python train_model.py)",
+      "Bash(python -c \"from backend.services.pipeline import DataPipeline; from backend.services.model_selector import ModelSelector; print\\('OK'\\)\")"
+    ]
+  }
+}

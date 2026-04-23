@@ -1,12 +1,13 @@
 """
 Simulation Module
-Provides trend analysis and scenario simulation
+Provides trend analysis, scenario simulation, and comparative analysis with explainability
 """
 
 import numpy as np
 from typing import Dict, List, Tuple
 from backend.services.pipeline import DataPipeline
 from backend.services.decision import DecisionEngine
+from backend.services.explainability import ExplainabilityEngine
 from backend.utils.logger import system_logger
 
 
@@ -97,32 +98,56 @@ class SimulationEngine:
             ]
         
         results = []
-        
+
         for scenario in scenarios:
             # Apply scenario modifications
             modified_weather = base_weather.copy()
-            
+
             for feature, multiplier in scenario.items():
                 if feature != 'name' and feature in modified_weather:
                     modified_weather[feature] = base_weather[feature] * multiplier
-            
+
             # Ensure non-negative
             for key in modified_weather:
                 if isinstance(modified_weather[key], (int, float)):
                     modified_weather[key] = max(0, modified_weather[key])
-            
+
             # Make prediction
             try:
                 prediction = self.pipeline.predict_pipeline(modified_weather, month)
                 decision = self.decision_engine.make_decision(prediction)
-                
+
                 result = {
                     'scenario_name': scenario['name'],
                     'weather': modified_weather,
                     'prediction': prediction,
                     'decision': decision
                 }
-                
+
+                # Add explainability
+                try:
+                    explainability = ExplainabilityEngine(
+                        self.pipeline.fuzzy_wildfire_system,
+                        self.pipeline.anfis_model
+                    )
+                    explanation = explainability.explain_prediction(
+                        prediction,
+                        modified_weather,
+                        prediction.get('fwi_components', {})
+                    )
+                    result['explanation'] = explanation
+
+                    # Explain delta from baseline if this isn't baseline
+                    if scenario['name'] != 'Normal Conditions':
+                        result['delta_explanation'] = explainability.explain_scenario_delta(
+                            base_risk=1.0,  # placeholder
+                            scenario_risk=decision['risk_score'],
+                            base_explanation={},
+                            scenario_explanation=explanation
+                        )
+                except Exception:
+                    result['explanation'] = None
+
                 results.append(result)
                 
             except Exception as e:

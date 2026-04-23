@@ -1,13 +1,14 @@
 """
 Regional Scanner Module
-Scans multiple locations for wildfire risk
+Scans multiple locations for wildfire risk with per-region explainability
 """
 
 import numpy as np
-from typing import List, Dict
+from typing import List, Dict, Optional
 from backend.services.pipeline import DataPipeline
 from backend.api.weather import WeatherAPI
 from backend.services.decision import DecisionEngine
+from backend.services.explainability import ExplainabilityEngine
 from backend.utils.logger import system_logger
 
 
@@ -84,7 +85,23 @@ class RegionalScanner:
                 'prediction': prediction,
                 'decision': decision
             }
-            
+
+            # Add explainability for high-risk regions
+            if decision['risk_score'] > 0.6:
+                try:
+                    explainability = ExplainabilityEngine(
+                        self.pipeline.fuzzy_wildfire_system,
+                        self.pipeline.anfis_model
+                    )
+                    explanation = explainability.explain_prediction(
+                        prediction,
+                        weather_data,
+                        prediction.get('fwi_components', {})
+                    )
+                    result['explanation'] = explanation
+                except Exception:
+                    result['explanation'] = None
+
             return result
             
         except Exception as e:

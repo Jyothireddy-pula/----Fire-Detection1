@@ -1,9 +1,16 @@
+import re
+import textwrap
 """
 Streamlit Frontend
 Professional UI for Wildfire Risk Prediction System
 """
 
 import streamlit as st
+
+def _clean_html(html_str):
+    import re
+    return re.sub(r'^[ \t]+', '', html_str, flags=re.MULTILINE)
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -34,7 +41,7 @@ st.set_page_config(
 )
 
 # Custom CSS for professional styling
-st.markdown("""
+st.markdown(_clean_html("""
 <style>
     .main-header {
         font-size: 2.5rem;
@@ -66,7 +73,7 @@ st.markdown("""
         background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
     }
 </style>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 
 # Initialize session state
 if 'pipeline' not in st.session_state:
@@ -77,60 +84,35 @@ if 'database' not in st.session_state:
     st.session_state.database = HistoryDatabase()
 if 'models_loaded' not in st.session_state:
     st.session_state.models_loaded = False
-if 'api_key_submitted' not in st.session_state:
-    st.session_state.api_key_submitted = False
-if 'api_key' not in st.session_state:
-    st.session_state.api_key = ''
+# Initialize API Key from .env file invisibly
+if 'weather_api' not in st.session_state or st.session_state.weather_api is None:
+    from dotenv import load_dotenv
+    load_dotenv()
+    env_api_key = os.environ.get("OPENWEATHER_API_KEY", "")
+    if env_api_key:
+        st.session_state.weather_api = WeatherAPI(env_api_key)
 
 # Sidebar
 with st.sidebar:
     st.title("🔥 Wildfire Risk System")
     
-    # API Key input with submit and edit functionality
-    if not st.session_state.api_key_submitted:
-        api_key = st.text_input("OpenWeatherMap API Key", type="password", 
-                               help="Enter your OpenWeatherMap API key for real-time data")
-        
-        if st.button("Submit API Key", use_container_width=True):
-            if api_key:
-                st.session_state.api_key = api_key
-                st.session_state.api_key_submitted = True
-                st.session_state.weather_api = WeatherAPI(api_key)
-                st.success("✅ API Key submitted and locked!")
-                st.rerun()
-            else:
-                st.error("❌ Please enter an API key")
-    else:
-        # Show locked API key with edit option
-        st.info("🔒 API Key is locked")
-        masked_key = st.session_state.api_key[:8] + "..." + st.session_state.api_key[-4:] if len(st.session_state.api_key) > 12 else "****"
-        st.text(f"Key: {masked_key}")
-        
-        if st.button("Edit API Key", use_container_width=True):
-            st.session_state.api_key_submitted = False
-            st.session_state.api_key = ''
-            st.session_state.weather_api = None
-            st.rerun()
-    
     st.divider()
     
-    # Model loading
+    # Automatic Model Loading
     if not st.session_state.models_loaded:
-        if st.button("Load Trained Models", use_container_width=True):
-            with st.spinner("Loading models..."):
-                try:
-                    pipeline = DataPipeline(model_dir='models')
-                    if pipeline.load_models():
-                        st.session_state.pipeline = pipeline
-                        st.session_state.models_loaded = True
-                        st.success("✅ Models loaded successfully!")
-                    else:
-                        st.error("❌ Failed to load models. Please train first.")
-                except Exception as e:
-                    st.error(f"❌ Error: {str(e)}")
+        with st.spinner("Loading AI Models auto-magically..."):
+            try:
+                pipeline = DataPipeline(model_dir='models')
+                if pipeline.load_models():
+                    st.session_state.pipeline = pipeline
+                    st.session_state.models_loaded = True
+                else:
+                    st.error("❌ Failed to load models. Please train first.")
+            except Exception as e:
+                st.error(f"❌ Error: {str(e)}")
     
     if st.session_state.models_loaded:
-        st.success("✅ Models loaded")
+        st.success("✅ Models are Active")
     
     st.divider()
     
@@ -262,13 +244,13 @@ if page == "📍 Single Location":
                     
                     # Risk score display with linguistic output
                     risk_class = f"risk-{decision['linguistic_risk_level'].lower().replace(' ', '_')}"
-                    st.markdown(f"""
+                    st.markdown(_clean_html(f"""
                     <div class="metric-card {risk_class}">
                         <h2 style="margin:0; font-size:3rem;">{decision['linguistic_risk_level']}</h2>
                         <p style="margin:0.5rem 0 0 0; font-size:1.2rem;">Risk Score: {decision['risk_score']:.2f}</p>
                         <p style="margin:0.5rem 0 0 0; opacity:0.9;">{decision['risk_description']}</p>
                     </div>
-                    """, unsafe_allow_html=True)
+                    """), unsafe_allow_html=True)
                     
                     # Metrics row
                     col1, col2, col3, col4 = st.columns(4)
@@ -332,7 +314,7 @@ if page == "📍 Single Location":
                         icon = "💥"
                     
                     # Display dynamic action
-                    st.markdown(f"""
+                    st.markdown(_clean_html(f"""
                     <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                                 padding: 20px; border-radius: 10px; color: white; margin: 10px 0;">
                         <h3 style="margin: 0 0 10px 0;">{action_color} {action_text}</h3>
@@ -341,10 +323,10 @@ if page == "📍 Single Location":
                             <strong>Risk Score:</strong> {risk_score:.2f} | <strong>Confidence:</strong> {(prediction.get('fuzzy_output', risk_score) * 100):.1f}%
                         </p>
                     </div>
-                    """, unsafe_allow_html=True)
+                    """), unsafe_allow_html=True)
                     
                     # Real-time status indicator
-                    st.markdown(f"""
+                    st.markdown(_clean_html(f"""
                     <div style="display: flex; align-items: center; gap: 10px; margin: 15px 0;">
                         <div style="width: 12px; height: 12px; background: #00ff00; border-radius: 50%; 
                                     animation: pulse 2s infinite;"></div>
@@ -357,7 +339,7 @@ if page == "📍 Single Location":
                             100% {{ opacity: 1; }}
                         }}
                     </style>
-                    """, unsafe_allow_html=True)
+                    """), unsafe_allow_html=True)
                     
                     # Feature contribution with user-friendly explanations
                     st.subheader("🔍 Feature Contribution Analysis")
@@ -367,7 +349,7 @@ if page == "📍 Single Location":
                     output_scores = fuzzy_details.get('output_scores', {})
                     
                     # Create user-friendly feature analysis
-                    st.markdown("""
+                    st.markdown(_clean_html("""
                     <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0;">
                         <h4 style="margin: 0 0 10px 0;">📊 What's driving this risk level?</h4>
                         <p style="margin: 0; color: #666; font-size: 14px;">
@@ -375,7 +357,7 @@ if page == "📍 Single Location":
                             Below shows how each factor contributed to today's risk assessment.
                         </p>
                     </div>
-                    """, unsafe_allow_html=True)
+                    """), unsafe_allow_html=True)
                     
                     contributions = decision_engine.get_feature_contribution(prediction)
                     
@@ -481,7 +463,7 @@ if page == "📍 Single Location":
                                 bg_gradient = "linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)"
                                 icon_bg = "#16a34a"
                             
-                            st.markdown(f"""
+                            st.markdown(_clean_html(f"""
                             <div style="margin: 20px 0; padding: 0; background: {bg_gradient}; 
                                         border-radius: 16px; overflow: hidden; 
                                         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -528,12 +510,12 @@ if page == "📍 Single Location":
                                     </p>
                                 </div>
                             </div>
-                            """, unsafe_allow_html=True)
+                            """), unsafe_allow_html=True)
                     
                     # Enhanced fuzzy reasoning section with creative design
                     reasoning = prediction.get('reasoning', '')
                     if reasoning:
-                        st.markdown("""
+                        st.markdown(_clean_html("""
                         <div style="margin: 30px 0; padding: 0;">
                             <div style="background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); 
                                         padding: 25px; border-radius: 16px; color: white; 
@@ -571,12 +553,174 @@ if page == "📍 Single Location":
                                 </div>
                             </div>
                         </div>
-                        """.format(reasoning=reasoning), unsafe_allow_html=True)
+                        """).format(reasoning=reasoning), unsafe_allow_html=True)
                     
                     # Alert if high risk
                     if decision['risk_score'] > 0.75:
-                        st.error(f"🚨 ALERT: {decision['action_message']}")
-                    
+                        alert_system = AlertSystem(
+                            st.session_state.database,
+                            DecisionEngine(),
+                            pipeline=st.session_state.pipeline
+                        )
+                        alert = alert_system.check_and_generate_alert(prediction, location_name)
+                        if alert:
+                            explanation = alert.get('explanation', {})
+                            why_high_risk = alert.get('why_high_risk', [])
+                            
+                            # Build the explicitly explained cause list
+                            top_factors = explanation.get('factor_importance', [])[:3]
+                            cause_html = ""
+                            if top_factors:
+                                cause_html += "<ul style='margin-top:10px; font-size:16px;'>"
+                                for f in top_factors:
+                                    cause_html += f"<li><b>{f['name']}</b> ({f['value']:.1f}) is critically driving the risk score up!</li>"
+                                cause_html += "</ul>"
+                            
+                            if why_high_risk:
+                                cause_html += "<div style='margin-top:10px; padding:10px; background:rgba(255,255,255,0.2); border-radius:5px; font-weight:bold;'>"
+                                for reason in why_high_risk:
+                                    cause_html += f"<p style='margin:0;'>🔥 {reason}</p>"
+                                cause_html += "</div>"
+
+                            # Display the explicitly explained browser Alert
+                            st.markdown(_clean_html(f"""
+                            <div style="background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%); 
+                                        padding: 25px; border-radius: 12px; color: white; margin: 20px 0; border-left: 8px solid #fecaca; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);">
+                                <h2 style="margin: 0 0 15px 0;">🚨 HIGH RISK ALERT: {decision['action_message']}</h2>
+                                <h4 style="margin: 0; opacity: 0.95;">The predicted risk for {location_name} is critically high ({decision['risk_score']:.2f}).</h4>
+                                <hr style="border-color: rgba(255,255,255,0.3); margin: 15px 0;" />
+                                <h4 style="margin: 0 0 5px 0;">What exactly is causing this?</h4>
+                                {cause_html}
+                            </div>
+                            """), unsafe_allow_html=True)
+                        else:
+                            st.error(f"🚨 ALERT: {decision['action_message']}")
+
+                    # ---- NEW: Explainability Analysis Section ----
+                    st.markdown("---")
+                    st.subheader("🔬 Explainability Analysis")
+
+                    try:
+                        explainability = ExplainabilityEngine(
+                            st.session_state.pipeline.fuzzy_wildfire_system,
+                            st.session_state.pipeline.anfis_model
+                        )
+                        explanation = explainability.explain_prediction(
+                            prediction,
+                            weather_data,
+                            prediction.get('fwi_components', {})
+                        )
+
+                        # Gauge Chart for Overall Risk
+                        fig_gauge = go.Figure(go.Indicator(
+                            mode = "gauge+number",
+                            value = prediction.get('risk_score', 0),
+                            domain = {'x': [0, 1], 'y': [0, 1]},
+                            title = {'text': "Live Risk Gauge", 'font': {'size': 24}},
+                            gauge = {
+                                'axis': {'range': [0, 1], 'tickwidth': 1},
+                                'bar': {'color': "white", 'thickness': 0.2},
+                                'bgcolor': "white",
+                                'borderwidth': 2,
+                                'bordercolor': "gray",
+                                'steps': [
+                                    {'range': [0, 0.25], 'color': "#22c55e"},   # Green
+                                    {'range': [0.25, 0.5], 'color': "#eab308"},  # Yellow
+                                    {'range': [0.5, 0.75], 'color': "#f97316"},  # Orange
+                                    {'range': [0.75, 1.0], 'color': "#ef4444"}   # Red
+                                ],
+                                'threshold': {
+                                    'line': {'color': "black", 'width': 4},
+                                    'thickness': 0.75,
+                                    'value': prediction.get('risk_score', 0)
+                                }
+                            }
+                        ))
+                        fig_gauge.update_layout(height=300, margin=dict(l=10, r=10, t=40, b=10))
+                        
+                        # Radar Chart for FWI environment snapshot
+                        fwi_comps = prediction.get('fwi_components', {})
+                        categories = ['FFMC', 'DMC', 'DC', 'ISI', 'BUI', 'FWI']
+                        # Normalize values roughly to 0-100 for visual radar comparison
+                        r_vals = [
+                            min(max(fwi_comps.get('FFMC', 0), 0), 100),
+                            min(max(fwi_comps.get('DMC', 0) / 2, 0), 100),
+                            min(max(fwi_comps.get('DC', 0) / 8, 0), 100),
+                            min(max(fwi_comps.get('ISI', 0) * 3, 0), 100),
+                            min(max(fwi_comps.get('BUI', 0) / 2, 0), 100),
+                            min(max(fwi_comps.get('FWI', 0) * 2, 0), 100),
+                        ]
+                        fig_radar = go.Figure()
+                        fig_radar.add_trace(go.Scatterpolar(
+                            r=r_vals,
+                            theta=categories,
+                            fill='toself',
+                            line=dict(color='#3b82f6'),
+                            name='Current Condition Level'
+                        ))
+                        fig_radar.update_layout(
+                            polar=dict(radialaxis=dict(visible=False, range=[0, 100])),
+                            showlegend=False,
+                            height=350,
+                            margin=dict(l=30, r=30, t=30, b=30),
+                            title={'text': "FWI Environment Stress Radar", 'x': 0.5}
+                        )
+
+                        # Display graphical charts side-by-side
+                        ch_col1, ch_col2 = st.columns(2)
+                        with ch_col1:
+                            st.plotly_chart(fig_gauge, use_container_width=True)
+                        with ch_col2:
+                            st.plotly_chart(fig_radar, use_container_width=True)
+
+                        # AI Summary Card
+                        st.markdown(_clean_html(f"""
+                        <div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+                                    padding: 25px; border-radius: 16px; color: white; margin: 15px 0;">
+                            <h3 style="margin: 0 0 15px 0;">🧠 Detailed AI Assessment</h3>
+                            <p style="margin: 0; line-height: 1.6; font-size: 16px;">
+                                {explanation.get('summary', 'No explanation available')}
+                            </p>
+                        </div>
+                        """), unsafe_allow_html=True)
+
+                        # Model used indicator
+                        model_used = explanation.get('model_used', 'fuzzy')
+                        st.info(f"Model used for prediction: **{model_used.upper()}**")
+
+                        # Top Contributing Factors
+                        st.subheader("📊 Top Contributing Factors")
+                        top_factors = explanation.get('factor_importance', [])
+
+                        factor_data = []
+                        for f in top_factors[:5]:
+                            factor_data.append({
+                                'Factor': f['name'],
+                                'Value': f['value'],
+                                'Impact': f'{f["impact"]:.0%}'
+                            })
+
+                        if factor_data:
+                            st.table(pd.DataFrame(factor_data))
+
+                        # Fired Fuzzy Rules
+                        fired_rules = explanation.get('fired_rules', [])
+                        if fired_rules:
+                            st.subheader("📋 Fired Fuzzy Rules")
+                            for i, rule in enumerate(fired_rules[:4], 1):
+                                with st.expander(
+                                    f"Rule {i}: {rule['output'].upper()} (strength: {rule['strength']:.2f})"
+                                ):
+                                    st.markdown(f"**Conditions:** {rule['conditions']}")
+                                    st.markdown(f"**Reasoning:** {rule['reasoning']}")
+
+                        # Confidence
+                        conf = explanation.get('confidence', 0)
+                        st.metric("Prediction Confidence", f"{conf:.1%}")
+
+                    except Exception as e:
+                        st.warning(f"Explainability not available: {str(e)}")
+
                     # Clear analyze flag
                     st.session_state.analyze = False
                     
@@ -605,7 +749,11 @@ elif page == "🗺️ Regional Scanner":
         if st.session_state.get('scan', False):
             with st.spinner("Scanning regions..."):
                 try:
-                    scanner = RegionalScanner(st.session_state.pipeline, st.session_state.weather_api)
+                    weather_client = st.session_state.weather_api
+                    if weather_client is None:
+                        from backend.api.weather import WeatherAPI
+                        weather_client = WeatherAPI('demo_key')
+                    scanner = RegionalScanner(st.session_state.pipeline, weather_client)
                     results = scanner.scan_all_regions(month, max_regions)
                     summary = scanner.get_regional_summary(results)
                     
@@ -620,22 +768,41 @@ elif page == "🗺️ Regional Scanner":
                         col2.metric("Max Risk", f"{summary['max_risk']:.2f}")
                         col3.metric("High Risk Regions", len(summary['high_risk_regions']))
                         
-                        # Display results table
-                        st.subheader("📍 Regional Results")
+                        # Display results as an interactive Line Graph instead of static table
+                        st.subheader("📈 Regional Risk Trends")
                         
                         df_data = []
                         for r in results:
+                            # Safely extract risk value for graphing
+                            r_score = r['decision'].get('risk_score', 0)
                             df_data.append({
                                 'Region': r['region_name'],
-                                'Risk Score': f"{r['decision']['risk_score']:.2f}",
-                                'Fire Risk': r['decision']['linguistic_risk_level'],
-                                'Temperature': f"{r['weather']['temperature']:.1f}°C",
-                                'Humidity': f"{r['weather']['humidity']:.1f}%",
-                                'Wind': f"{r['weather']['wind_speed']:.1f} km/h"
+                                'Risk Score': float(r_score),
+                                'Level': r['decision'].get('linguistic_risk_level', 'Unknown'),
+                                'Temp': float(r['weather']['temperature'])
                             })
                         
                         df = pd.DataFrame(df_data)
-                        st.dataframe(df, use_container_width=True)
+                        
+                        # Sort to make line graph easier to read and identify highest risks
+                        df = df.sort_values('Risk Score', ascending=False)
+                        
+                        fig_line = px.line(df, x='Region', y='Risk Score', 
+                                         markers=True, 
+                                         hover_data=['Level', 'Temp'],
+                                         title="Wildfire Risk Score by Region",
+                                         color_discrete_sequence=['#ef4444'])
+                        
+                        # Add danger band horizontal line
+                        fig_line.add_hline(y=0.75, line_dash="dash", line_color="orange", annotation_text="High Risk Threshold")
+                        
+                        fig_line.update_layout(
+                            height=450, 
+                            xaxis_tickangle=-45,
+                            yaxis=dict(range=[0, 1.05]),
+                            margin=dict(b=100) # give space for region names
+                        )
+                        st.plotly_chart(fig_line, use_container_width=True)
                         
                         # Risk map visualization
                         st.subheader("🗺️ Risk Map")
@@ -665,7 +832,36 @@ elif page == "🗺️ Regional Scanner":
                         )
                         fig.update_layout(height=500)
                         st.plotly_chart(fig, use_container_width=True)
-                
+
+                        # Per-region explainability for high-risk regions
+                        high_risk_regions = [r for r in results if r['decision']['risk_score'] > 0.7]
+                        if high_risk_regions:
+                            st.subheader("🔬 High-Risk Region Explainability")
+                            for r in high_risk_regions[:5]:
+                                explanation = r.get('explanation')
+                                if explanation:
+                                    with st.expander(
+                                        f"📍 {r['region_name']} — {r['decision']['linguistic_risk_level']} "
+                                        f"(Risk: {r['decision']['risk_score']:.2f})"
+                                    ):
+                                        st.markdown(f"**AI Summary:** {explanation.get('summary', 'N/A')}")
+                                        top_factors = explanation.get('factor_importance', [])[:3]
+                                        if top_factors:
+                                            st.markdown("**Top Factors:**")
+                                            for f in top_factors:
+                                                st.markdown(
+                                                    f"  • {f['name']}: {f['value']:.1f} "
+                                                    f"(impact: {f['impact']:.0%})"
+                                                )
+                                        fired_rules = explanation.get('fired_rules', [])[:2]
+                                        if fired_rules:
+                                            st.markdown("**Active Rules:**")
+                                            for rule in fired_rules:
+                                                st.caption(
+                                                    f"IF {rule['conditions']} → {rule['output']} "
+                                                    f"(strength: {rule['strength']:.2f})"
+                                                )
+
                 except Exception as e:
                     st.error(f"❌ Error during scan: {str(e)}")
                     system_logger.error(f"Regional scan error: {str(e)}")
@@ -753,15 +949,40 @@ elif page == "📊 Simulation":
                         sim_engine = SimulationEngine(st.session_state.pipeline)
                         scenarios = sim_engine.scenario_simulation(base_weather, month)
                         
-                        # Display results
+                        # Display results with explainability
                         for scenario in scenarios:
                             risk_class = f"risk-{scenario['decision']['linguistic_risk_level'].lower().replace(' ', '_')}"
-                            st.markdown(f"""
+                            st.markdown(_clean_html(f"""
                             <div class="metric-card {risk_class}" style="padding:1rem;">
                                 <h3 style="margin:0;">{scenario['scenario_name']}</h3>
                                 <p style="margin:0.5rem 0 0 0;">{scenario['decision']['linguistic_risk_level']} (Risk: {scenario['decision']['risk_score']:.2f})</p>
                             </div>
-                            """, unsafe_allow_html=True)
+                            """), unsafe_allow_html=True)
+
+                            # Show explanation if available
+                            explanation = scenario.get('explanation')
+                            if explanation:
+                                with st.expander(f"🔬 Explain: {scenario['scenario_name']}"):
+                                    st.markdown(f"**AI Summary:** {explanation.get('summary', 'N/A')}")
+                                    top_factors = explanation.get('factor_importance', [])[:3]
+                                    if top_factors:
+                                        st.markdown("**Top Contributing Factors:**")
+                                        for f in top_factors:
+                                            st.markdown(
+                                                f"  • {f['name']}: {f['value']:.1f} "
+                                                f"(impact: {f['impact']:.0%})"
+                                            )
+                                    fired_rules = explanation.get('fired_rules', [])[:2]
+                                    if fired_rules:
+                                        st.markdown("**Active Rules:**")
+                                        for rule in fired_rules:
+                                            st.caption(
+                                                f"IF {rule['conditions']} → {rule['output']} "
+                                                f"(strength: {rule['strength']:.2f})"
+                                            )
+                                    delta_exp = scenario.get('delta_explanation')
+                                    if delta_exp:
+                                        st.info(f"**vs Baseline:** {delta_exp}")
                     
                     except Exception as e:
                         st.error(f"❌ Error: {str(e)}")
@@ -818,10 +1039,10 @@ elif page == "⚙️ Settings":
 
 # Footer
 st.markdown("---")
-st.markdown("""
+st.markdown(_clean_html("""
 <div style="text-align: center; color: #6b7280; padding: 1rem;">
     <p>🔥 Intelligent Wildfire Risk Prediction System using PSO-ANFIS</p>
     <p>Powered by Soft Computing: Fuzzy Logic, ANFIS, PSO, SHAP</p>
 </div>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 st.markdown("---")

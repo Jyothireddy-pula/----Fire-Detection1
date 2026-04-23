@@ -1,31 +1,36 @@
 """
 Alert System Module
-Handles alert generation and management
+Handles alert generation and management with explainability
 """
 
 import time
-from typing import Dict, List
+from typing import Dict, List, Optional
 from datetime import datetime
 from backend.services.database import HistoryDatabase
 from backend.services.decision import DecisionEngine
+from backend.services.explainability import ExplainabilityEngine
 from backend.utils.logger import system_logger
 
 
 class AlertSystem:
     """Alert system for wildfire risk notifications"""
-    
-    def __init__(self, database: HistoryDatabase, decision_engine: DecisionEngine):
+
+    def __init__(self, database: HistoryDatabase, decision_engine: DecisionEngine,
+                 pipeline=None):
         """
         Initialize alert system
-        
+
         Args:
             database: History database instance
             decision_engine: Decision engine instance
+            pipeline: Optional DataPipeline for explainability
         """
         self.database = database
         self.decision_engine = decision_engine
+        self.pipeline = pipeline
         self.alert_threshold = 0.75
         self.active_alerts = {}
+        self._explainability = None
     
     def check_and_generate_alert(self, prediction_result: Dict, location: str = 'Unknown') -> Dict:
         """
@@ -59,18 +64,18 @@ class AlertSystem:
     
     def _create_alert(self, prediction_result: Dict, location: str) -> Dict:
         """
-        Create alert dictionary
-        
+        Create alert dictionary with explainability.
+
         Args:
             prediction_result: Prediction result
             location: Location name
-            
+
         Returns:
             Alert dictionary
         """
         risk_score = prediction_result['risk_score']
         risk_level, _ = self.decision_engine.map_risk_level(risk_score)
-        
+
         # Determine severity
         if risk_score >= 0.9:
             severity = 'critical'
@@ -81,7 +86,30 @@ class AlertSystem:
         else:
             severity = 'medium'
             message = f'WARNING: Elevated wildfire risk detected in {location}. Monitor closely.'
-        
+
+        # Build explainability data
+        weather_data = prediction_result.get('fwi_components', {})
+        fwi_components = prediction_result.get('fwi_components', {})
+
+        explanation = None
+        if self.pipeline:
+            try:
+                explainability = ExplainabilityEngine(
+                    self.pipeline.fuzzy_wildfire_system,
+                    self.pipeline.anfis_model
+                )
+                explanation = explainability.explain_prediction(
+                    prediction_result, weather_data, fwi_components
+                )
+                why_high_risk = explainability.explain_why_high_risk(
+                    prediction_result, explanation
+                )
+            except Exception:
+                explanation = None
+                why_high_risk = []
+        else:
+            why_high_risk = []
+
         alert = {
             'location': location,
             'alert_type': 'wildfire_risk',
@@ -90,9 +118,11 @@ class AlertSystem:
             'risk_score': risk_score,
             'risk_level': risk_level,
             'timestamp': datetime.now().isoformat(),
-            'fwi_components': prediction_result.get('fwi_components', {})
+            'fwi_components': fwi_components,
+            'explanation': explanation,
+            'why_high_risk': why_high_risk
         }
-        
+
         return alert
     
     def get_active_alerts(self) -> List[Dict]:

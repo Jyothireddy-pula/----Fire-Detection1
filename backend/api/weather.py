@@ -13,19 +13,19 @@ from backend.utils.logger import system_logger
 class WeatherAPI:
     """OpenWeatherMap API client with caching and error handling"""
     
-    def __init__(self, api_key: str, timeout: int = 5, max_retries: int = 3):
+    def __init__(self, api_key: str = None, timeout: int = 5, max_retries: int = 3):
         """
         Initialize Weather API client
         
         Args:
-            api_key: OpenWeatherMap API key
+            api_key: (Deprecated) No longer needed for Open-Meteo
             timeout: Request timeout in seconds
             max_retries: Maximum number of retries
         """
         self.api_key = api_key
         self.timeout = timeout
         self.max_retries = max_retries
-        self.base_url = "https://api.openweathermap.org/data/2.5/weather"
+        self.base_url = "https://api.open-meteo.com/v1/forecast"
         self.api_failure_count = 0
         self.last_valid_cache = None
     
@@ -53,10 +53,9 @@ class WeatherAPI:
         for attempt in range(self.max_retries):
             try:
                 params = {
-                    'lat': lat,
-                    'lon': lon,
-                    'appid': self.api_key,
-                    'units': 'metric'
+                    'latitude': lat,
+                    'longitude': lon,
+                    'current': 'temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation'
                 }
                 
                 start_time = time.time()
@@ -117,25 +116,19 @@ class WeatherAPI:
             Parsed weather data
         """
         try:
-            temperature = data['main']['temp']
-            humidity = data['main']['humidity']
-            wind_speed = data['wind']['speed']
-            
-            # Handle rainfall (may be missing)
-            rainfall = 0.0
-            if 'rain' in data:
-                if '1h' in data['rain']:
-                    rainfall = data['rain']['1h']
-                elif '3h' in data['rain']:
-                    rainfall = data['rain']['3h'] / 3  # Convert to hourly
+            current = data['current']
+            temperature = current['temperature_2m']
+            humidity = current['relative_humidity_2m']
+            wind_speed = current['wind_speed_10m']
+            rainfall = current['precipitation']
             
             return {
                 'temperature': float(temperature),
                 'humidity': float(humidity),
                 'wind_speed': float(wind_speed),
                 'rainfall': float(rainfall),
-                'location': data.get('name', 'Unknown'),
-                'country': data.get('sys', {}).get('country', 'Unknown')
+                'location': f"Lat: {data.get('latitude', 0):.2f}, Lon: {data.get('longitude', 0):.2f}",
+                'country': 'Unknown'
             }
         except KeyError as e:
             system_logger.error(f"Failed to parse weather data: missing key {e}")

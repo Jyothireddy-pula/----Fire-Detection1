@@ -77,222 +77,190 @@ class FuzzyWildfireSystem:
         for term, params in ranges.items():
             fuzzified[term] = self._trapezoidal_mf(value, params)
         return fuzzified
-    
+
     def _define_fuzzy_rules(self):
-        """
-        Define comprehensive fuzzy rules covering all input combinations
-        Each rule: IF conditions THEN output WITH reasoning
-        """
+        """Define the fuzzy rule base for wildfire prediction."""
         self.fuzzy_rules = [
-            # RULES FOR NO FIRE
-            {
-                'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'low', 'rain': 'heavy', 'vegetation': 'wet'},
-                'output': 'no_fire',
-                'weight': 2.0,
-                'reasoning': 'Low temperature, high humidity, low wind, heavy rain, and wet vegetation create conditions where fire cannot start or spread.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'high', 'vegetation': 'wet'},
-                'output': 'no_fire',
-                'weight': 1.5,
-                'reasoning': 'Low temperature combined with high humidity and wet vegetation prevents fire ignition.'
-            },
-            {
-                'conditions': {'rain': 'heavy', 'vegetation': 'wet'},
-                'output': 'no_fire',
-                'weight': 1.8,
-                'reasoning': 'Heavy rainfall saturates vegetation, making fire ignition virtually impossible.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'low', 'rain': 'medium'},
-                'output': 'no_fire',
-                'weight': 1.2,
-                'reasoning': 'Low temperature, high humidity, low wind, and moderate rainfall create very low fire risk.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'medium', 'rain': 'medium'},
-                'output': 'no_fire',
-                'weight': 1.0,
-                'reasoning': 'Low temperature and high humidity with moderate rainfall prevent fire despite medium wind.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'low', 'rain': 'heavy'},
-                'output': 'no_fire',
-                'weight': 1.3,
-                'reasoning': 'Low temperature and heavy rainfall prevent fire ignition even with medium humidity.'
-            },
-            
-            # RULES FOR LOW FIRE
-            {
-                'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'low', 'vegetation': 'medium'},
-                'output': 'low_fire',
-                'weight': 0.8,
-                'reasoning': 'Low temperature and low wind limit fire spread despite moderate conditions.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'low', 'vegetation': 'medium'},
-                'output': 'low_fire',
-                'weight': 0.8,
-                'reasoning': 'High humidity and low wind suppress fire spread even with medium temperature.'
-            },
-            {
-                'conditions': {'temp': 'low', 'vegetation': 'dry', 'wind': 'low'},
-                'output': 'low_fire',
-                'weight': 0.7,
-                'reasoning': 'Dry vegetation poses some risk, but low temperature and wind prevent significant fire spread.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'rain': 'medium', 'wind': 'low'},
-                'output': 'low_fire',
-                'weight': 0.8,
-                'reasoning': 'Moderate rainfall reduces fire risk despite medium temperature.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'medium', 'vegetation': 'wet'},
-                'output': 'low_fire',
-                'weight': 0.7,
-                'reasoning': 'Low temperature with high humidity creates low fire risk even with medium wind.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'medium', 'vegetation': 'wet'},
-                'output': 'low_fire',
-                'weight': 0.7,
-                'reasoning': 'High humidity and wet vegetation create low fire risk despite medium temperature and wind.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'medium', 'rain': 'medium'},
-                'output': 'low_fire',
-                'weight': 0.7,
-                'reasoning': 'Low temperature with moderate rainfall creates low fire risk.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'low', 'rain': 'medium'},
-                'output': 'low_fire',
-                'weight': 0.7,
-                'reasoning': 'Moderate conditions with rainfall and low wind create low fire risk.'
-            },
-            
-            # RULES FOR MEDIUM FIRE
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'medium', 'vegetation': 'medium'},
-                'output': 'medium_fire',
-                'weight': 0.9,
-                'reasoning': 'Medium temperature, humidity, and wind create conditions where fire can start and spread moderately.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'low', 'vegetation': 'medium'},
-                'output': 'medium_fire',
-                'weight': 0.85,
-                'reasoning': 'High temperature increases risk, but medium humidity and low wind limit spread to moderate levels.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'medium', 'vegetation': 'dry'},
-                'output': 'medium_fire',
-                'weight': 0.9,
-                'reasoning': 'Low humidity and dry vegetation increase fire risk, resulting in medium fire conditions.'
-            },
-            {
-                'conditions': {'temp': 'high', 'rain': 'light', 'wind': 'low'},
-                'output': 'medium_fire',
-                'weight': 0.8,
-                'reasoning': 'High temperature is partially mitigated by light rain and low wind, resulting in medium risk.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'low', 'vegetation': 'medium'},
-                'output': 'medium_fire',
-                'weight': 0.8,
-                'reasoning': 'Low humidity with medium temperature creates moderate fire risk.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'low', 'vegetation': 'dry'},
-                'output': 'medium_fire',
-                'weight': 0.85,
-                'reasoning': 'Medium temperature and humidity with dry vegetation creates moderate fire risk.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'medium', 'rain': 'light'},
-                'output': 'medium_fire',
-                'weight': 0.75,
-                'reasoning': 'Moderate conditions with light rainfall create medium fire risk.'
-            },
-            {
-                'conditions': {'temp': 'low', 'humidity': 'low', 'wind': 'medium', 'vegetation': 'dry'},
-                'output': 'medium_fire',
-                'weight': 0.7,
-                'reasoning': 'Low humidity and dry vegetation with medium wind create medium fire risk despite low temperature.'
-            },
-            
-            # RULES FOR HIGH FIRE
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'medium', 'vegetation': 'dry'},
-                'output': 'high_fire',
-                'weight': 0.9,
-                'reasoning': 'High temperature, low humidity, medium wind, and dry vegetation create high fire danger with significant spread potential.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'vegetation': 'medium'},
-                'output': 'high_fire',
-                'weight': 0.9,
-                'reasoning': 'High temperature and low humidity combined with high wind create high fire risk.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'high', 'vegetation': 'dry'},
-                'output': 'high_fire',
-                'weight': 0.9,
-                'reasoning': 'Low humidity, high wind, and dry vegetation create high fire conditions even with medium temperature.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'high', 'vegetation': 'dry'},
-                'output': 'high_fire',
-                'weight': 0.9,
-                'reasoning': 'High temperature and wind with dry vegetation create high fire risk despite medium humidity.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'medium', 'rain': 'light'},
-                'output': 'high_fire',
-                'weight': 0.8,
-                'reasoning': 'High temperature and low humidity dominate over light rain, creating high fire risk.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'medium', 'vegetation': 'dry'},
-                'output': 'high_fire',
-                'weight': 0.8,
-                'reasoning': 'High temperature with dry vegetation and moderate conditions creates high fire risk.'
-            },
-            {
-                'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'high', 'vegetation': 'medium'},
-                'output': 'high_fire',
-                'weight': 0.8,
-                'reasoning': 'Low humidity and high wind create high fire risk even with medium temperature and vegetation.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'low', 'vegetation': 'dry'},
-                'output': 'high_fire',
-                'weight': 0.85,
-                'reasoning': 'High temperature with very low humidity and dry vegetation creates high fire risk even with low wind.'
-            },
-            
-            # RULES FOR EXTREME FIRE
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'vegetation': 'dry'},
-                'output': 'extreme_fire',
-                'weight': 2.0,
-                'reasoning': 'CRITICAL: High temperature, very low humidity, high wind, and extremely dry vegetation create perfect conditions for extreme wildfire with rapid spread.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
-                'output': 'extreme_fire',
-                'weight': 1.8,
-                'reasoning': 'Extreme conditions dominate over light rain; high temp, low humidity, high wind, and dry vegetation create extreme fire danger.'
-            },
-            {
-                'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'vegetation': 'dry'},
-                'output': 'extreme_fire',
-                'weight': 2.0,
-                'reasoning': 'All critical factors at extreme levels: maximum fire danger with explosive spread potential.'
-            }
+            # Extreme fire conditions
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'extreme_fire', 'weight': 1.0,
+             'reasoning': 'High temp, low humidity, high wind, no rain, and dry vegetation create extreme fire conditions'},
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'medium', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'extreme_fire', 'weight': 0.95,
+             'reasoning': 'High temp with low humidity and dry vegetation lead to extreme fire risk even with moderate wind'},
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'extreme_fire', 'weight': 0.9,
+             'reasoning': 'Combined high temperature and dry conditions create extreme fire danger'},
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'high_fire', 'weight': 0.85,
+             'reasoning': 'High temperature with strong winds significantly increase fire spread potential'},
+            # High fire conditions
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'low', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'high_fire', 'weight': 0.8,
+             'reasoning': 'High temp and low humidity with dry vegetation create high fire risk'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'high_fire', 'weight': 0.8,
+             'reasoning': 'Low humidity and high wind with dry fuels create dangerous fire conditions'},
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'high_fire', 'weight': 0.85,
+             'reasoning': 'Hot, dry, and windy conditions together produce high fire risk'},
+            {'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.7,
+             'reasoning': 'Moderate conditions with wind and dry vegetation elevate fire spread risk'},
+            # Medium fire conditions
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'medium_fire', 'weight': 0.65,
+             'reasoning': 'Warm temperature with moderate humidity on semi-dry vegetation creates medium fire risk'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'medium', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'medium_fire', 'weight': 0.7,
+             'reasoning': 'Low humidity and moderate wind on semi-dry fuels increase fire potential'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'low', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.7,
+             'reasoning': 'Dry vegetation and low humidity on moderate temperature create medium fire conditions'},
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'low', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.7,
+             'reasoning': 'Hot and dry conditions with low wind create moderate fire risk'},
+            {'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'high', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.5,
+             'reasoning': 'High humidity offsets some wind and temperature effects, reducing fire risk'},
+            # Low fire conditions
+            {'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'medium', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.5,
+             'reasoning': 'Balanced conditions with moderate humidity and wind keep fire risk low'},
+            {'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'low', 'rain': 'light', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.45,
+             'reasoning': 'Wet vegetation and moderate humidity maintain low fire risk'},
+            {'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'medium', 'rain': 'medium', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.3,
+             'reasoning': 'Wet conditions and low temperature mean no fire risk'},
+            {'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'low', 'rain': 'medium', 'vegetation': 'medium'},
+             'output': 'no_fire', 'weight': 0.35,
+             'reasoning': 'Cool, moist conditions with no extreme wind keep fire risk minimal'},
+            # Rain-related rules
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'rain': 'medium', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.6,
+             'reasoning': 'Recent rain partially offsets high temp and wind, reducing fire risk'},
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'high', 'rain': 'heavy', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.2,
+             'reasoning': 'Heavy rain on wet vegetation eliminates fire risk despite high temperature'},
+            {'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'high', 'rain': 'heavy', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.2,
+             'reasoning': 'Heavy rainfall completely suppresses any fire risk'},
+            # Wind-driven fire spread
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'high_fire', 'weight': 0.8,
+             'reasoning': 'Strong wind dramatically increases fire spread even with moderate temp'},
+            {'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'high', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'medium_fire', 'weight': 0.6,
+             'reasoning': 'High wind can spread fire even with lower temperature if fuels are dry'},
+            # Default / fallback rules
+            {'conditions': {'temp': 'high', 'humidity': 'high', 'wind': 'low', 'rain': 'light', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'High humidity and wet vegetation keep fire risk low despite high temperature'},
+            {'conditions': {'temp': 'low', 'humidity': 'low', 'wind': 'low', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'low_fire', 'weight': 0.5,
+             'reasoning': 'Low temperature limits fire risk even with dry conditions'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'low', 'rain': 'light', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.45,
+             'reasoning': 'Wet vegetation offsets low humidity, keeping fire risk manageable'},
+            # Dry vegetation dominant rules
+            {'conditions': {'temp': 'low', 'humidity': 'low', 'wind': 'medium', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.65,
+             'reasoning': 'Dry vegetation is the dominant factor; moderate temp still creates fire risk'},
+            {'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'medium', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'low_fire', 'weight': 0.5,
+             'reasoning': 'Cool temperature limits fire despite dry vegetation and wind'},
+            {'conditions': {'temp': 'high', 'humidity': 'high', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.65,
+             'reasoning': 'Dry vegetation and wind offset some humidity effect, creating medium risk'},
+            # No rain dominates
+            {'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'low', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'low_fire', 'weight': 0.5,
+             'reasoning': 'Dry vegetation with no rain creates some fire risk but moderate conditions limit it'},
+            {'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'low', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'no_fire', 'weight': 0.35,
+             'reasoning': 'Cool, moist conditions prevent fire despite lack of rain'},
+            # Extreme combinations
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'high', 'rain': 'heavy', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'Heavy rain and wet vegetation suppress fire even in extreme heat and wind'},
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'low', 'rain': 'heavy', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.25,
+             'reasoning': 'Heavy rainfall completely negates fire risk from high temperature'},
+            # Additional coverage rules
+            {'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'low', 'rain': 'medium', 'vegetation': 'medium'},
+             'output': 'no_fire', 'weight': 0.3,
+             'reasoning': 'Moist conditions with rain eliminate fire risk'},
+            {'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'high', 'rain': 'medium', 'vegetation': 'medium'},
+             'output': 'no_fire', 'weight': 0.25,
+             'reasoning': 'High humidity and rain suppress fire despite wind'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'low', 'rain': 'heavy', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.2,
+             'reasoning': 'Heavy rain and wet vegetation eliminate fire risk'},
+            # Temperature-only dominant
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'low', 'rain': 'medium', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.35,
+             'reasoning': 'Rain and wet vegetation dominate, limiting fire risk despite high temp'},
+            {'conditions': {'temp': 'high', 'humidity': 'high', 'wind': 'medium', 'rain': 'medium', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.2,
+             'reasoning': 'Rain and humidity together eliminate fire risk'},
+            # Remaining combinations
+            {'conditions': {'temp': 'low', 'humidity': 'low', 'wind': 'low', 'rain': 'medium', 'vegetation': 'dry'},
+             'output': 'low_fire', 'weight': 0.45,
+             'reasoning': 'Dry vegetation keeps some fire risk even with rain and low temp'},
+            {'conditions': {'temp': 'low', 'humidity': 'low', 'wind': 'high', 'rain': 'medium', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'Wet vegetation limits fire risk despite wind and low humidity'},
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'medium', 'rain': 'medium', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'Rain and medium humidity balance high temperature, limiting fire risk'},
+            {'conditions': {'temp': 'medium', 'humidity': 'medium', 'wind': 'high', 'rain': 'heavy', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.15,
+             'reasoning': 'Heavy rain and wet fuels eliminate fire risk even with strong wind'},
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'medium', 'rain': 'medium', 'vegetation': 'medium'},
+             'output': 'medium_fire', 'weight': 0.6,
+             'reasoning': 'Low humidity and high temp keep fire risk elevated despite some rain'},
+            {'conditions': {'temp': 'high', 'humidity': 'low', 'wind': 'low', 'rain': 'medium', 'vegetation': 'dry'},
+             'output': 'high_fire', 'weight': 0.75,
+             'reasoning': 'Low humidity and dry vegetation dominate, creating high fire risk'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'low', 'rain': 'medium', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.6,
+             'reasoning': 'Dry vegetation and low humidity create medium fire risk'},
+            {'conditions': {'temp': 'high', 'humidity': 'high', 'wind': 'high', 'rain': 'medium', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'High humidity and rain offset wind and temperature effects'},
+            {'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'medium', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'low_fire', 'weight': 0.5,
+             'reasoning': 'High humidity limits fire despite dry vegetation and wind'},
+            {'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'high', 'rain': 'light', 'vegetation': 'dry'},
+             'output': 'medium_fire', 'weight': 0.6,
+             'reasoning': 'Dry vegetation and wind can overcome cool temperature'},
+            {'conditions': {'temp': 'low', 'humidity': 'low', 'wind': 'low', 'rain': 'heavy', 'vegetation': 'medium'},
+             'output': 'no_fire', 'weight': 0.3,
+             'reasoning': 'Heavy rain eliminates fire risk despite dry vegetation'},
+            {'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'high', 'rain': 'light', 'vegetation': 'wet'},
+             'output': 'low_fire', 'weight': 0.35,
+             'reasoning': 'Wet vegetation and high humidity keep fire risk low even with wind'},
+            {'conditions': {'temp': 'high', 'humidity': 'medium', 'wind': 'high', 'rain': 'heavy', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.35,
+             'reasoning': 'Heavy rain reduces fire risk significantly'},
+            {'conditions': {'temp': 'medium', 'humidity': 'low', 'wind': 'high', 'rain': 'heavy', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'Heavy rain offsets low humidity and wind effects'},
+            {'conditions': {'temp': 'high', 'humidity': 'high', 'wind': 'low', 'rain': 'light', 'vegetation': 'medium'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'High humidity and moisture in vegetation limit fire risk'},
+            {'conditions': {'temp': 'low', 'humidity': 'medium', 'wind': 'low', 'rain': 'light', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.3,
+             'reasoning': 'Wet vegetation and cool temperature eliminate fire risk'},
+            {'conditions': {'temp': 'low', 'humidity': 'high', 'wind': 'high', 'rain': 'light', 'vegetation': 'wet'},
+             'output': 'no_fire', 'weight': 0.2,
+             'reasoning': 'Wet vegetation and high humidity eliminate fire risk despite wind'},
+            {'conditions': {'temp': 'medium', 'humidity': 'high', 'wind': 'high', 'rain': 'medium', 'vegetation': 'dry'},
+             'output': 'low_fire', 'weight': 0.4,
+             'reasoning': 'Dry vegetation keeps some fire risk despite rain and humidity'},
         ]
-    
+
     def _calculate_rule_firing(self, fuzzified_inputs: Dict[str, Dict[str, float]], 
                                 rule: Dict) -> Tuple[float, str]:
         """
@@ -309,11 +277,9 @@ class FuzzyWildfireSystem:
         if not strengths:
             return 0.0, rule['output']
         
-        # Use average for partial matching
+        # Use average for partial matching, WITHOUT applying the severity weight
+        # This ensures match confidence is unbiased
         firing_strength = sum(strengths) / len(strengths)
-        
-        # Apply rule weight
-        firing_strength = firing_strength * rule.get('weight', 1.0)
         
         return firing_strength, rule['output']
     
@@ -356,8 +322,8 @@ class FuzzyWildfireSystem:
             firing_strength, output_term = self._calculate_rule_firing(fuzzified_inputs, rule)
             
             if firing_strength > 0:
-                # Aggregate using weighted sum
-                output_scores[output_term] += firing_strength
+                # Aggregate using Max (standard fuzzy composition) instead of sum to prevent over-firing
+                output_scores[output_term] = max(output_scores[output_term], firing_strength)
                 fired_rules.append({
                     'rule': rule,
                     'firing_strength': firing_strength,
@@ -367,12 +333,7 @@ class FuzzyWildfireSystem:
         # Store raw scores for comparison
         raw_scores = output_scores.copy()
         
-        # Normalize scores to 0-1 range for final output
-        max_score = max(output_scores.values()) if max(output_scores.values()) > 0 else 1.0
-        for key in output_scores:
-            output_scores[key] /= max_score
-        
-        # Determine final output with priority to more severe categories
+        # Find the highest scoring category using raw scores, with priority to more severe ones in case of ties
         # Priority order: extreme_fire > high_fire > medium_fire > low_fire > no_fire
         priority_order = ['extreme_fire', 'high_fire', 'medium_fire', 'low_fire', 'no_fire']
         
@@ -402,14 +363,18 @@ class FuzzyWildfireSystem:
         
         linguistic_output = output_mapping[final_output]
         
+        
         # Get the most relevant reasoning (from highest firing rule)
         if fired_rules:
-            top_rule = max(fired_rules, key=lambda x: x['firing_strength'])
+            # Sort by firing strength first, then rule weight
+            top_rule = max(fired_rules, key=lambda x: (x['firing_strength'], x['rule'].get('weight', 0.0)))
             reasoning = top_rule['reasoning']
             rule_firing = top_rule['firing_strength']
+            crisp_output = rule_firing * top_rule['rule'].get('weight', 1.0) # True risk score
         else:
             reasoning = "No fuzzy rules fired significantly. Using default low risk assessment."
             rule_firing = 0.0
+            crisp_output = 0.0
         
         return {
             'risk_score': crisp_output,

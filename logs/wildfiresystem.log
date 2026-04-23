@@ -942,3 +942,316 @@
 2026-04-23 20:07:51 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 101, 'DMC': 60.1, 'DC': 89.9, 'ISI': np.float64(1.3), 'BUI': 58.4, 'FWI': np.float64(0.7), 'Temperature': 39.94503492949124, 'RH': 29.551195096183168, 'Ws': 5.382251629914016, 'Rain': 0.1627307126306936}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 1.00
 2026-04-23 20:08:28 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.84s
 2026-04-23 20:08:28 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 99.2, 'DMC': 57.9, 'DC': 92.6, 'ISI': np.float64(1.3), 'BUI': 56.6, 'FWI': np.float64(3.3), 'Temperature': 41.32123151310574, 'RH': 38.144922900718, 'Ws': 6.026239399662444, 'Rain': 0.6764248577663066}, Output: {'linguistic_risk_level': 'Medium Fire', 'action': 'prepare'}, Confidence: 1.00
+2026-04-23 23:54:44 - WildfireSystem - INFO - Starting training pipeline
+2026-04-24 00:15:52 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:21:20 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:21:21 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:21:21 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:45:33 - WildfireSystem - ERROR - Failed to load models: 'PSOANFISOptimizer' object has no attribute 'anfis_model'
+2026-04-24 00:45:35 - WildfireSystem - ERROR - Failed to load models: 'PSOANFISOptimizer' object has no attribute 'anfis_model'
+2026-04-24 00:45:35 - WildfireSystem - ERROR - Failed to load models: 'PSOANFISOptimizer' object has no attribute 'anfis_model'
+2026-04-24 00:46:14 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 00:46:23 - WildfireSystem - INFO - Starting regional scan for 25 regions
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Dehradun, Uttarakhand: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Shimla, Himachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Srinagar, J&K: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Gangtok, Sikkim: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Itanagar, Arunachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Kohima, Nagaland: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Imphal, Manipur: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Aizawl, Mizoram: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Shillong, Meghalaya: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Guwahati, Assam: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Agartala, Tripura: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Kolkata, West Bengal: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Bhubaneswar, Odisha: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Raipur, Chhattisgarh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Bhopal, Madhya Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Nagpur, Maharashtra: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Bengaluru, Karnataka: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Thiruvananthapuram, Kerala: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Chennai, Tamil Nadu: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Amaravati, Andhra Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Hyderabad, Telangana: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Panaji, Goa: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Ahmedabad, Gujarat: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Jaipur, Rajasthan: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region New Delhi: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - INFO - Regional scan completed: 0 regions scanned
+2026-04-24 00:46:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:46:33 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:52:57 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 00:53:04 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:53:07 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:53:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:56:00 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 00:56:03 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:56:48 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:56:51 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(53.5), 'DC': 22.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 37.5, 'RH': 27.5, 'Ws': 12.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:57:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.8), 'DMC': np.float64(53.0), 'DC': 21.0, 'ISI': np.float64(0.0), 'BUI': np.float64(45.9), 'FWI': np.float64(0.0), 'Temperature': 31.5, 'RH': 50.0, 'Ws': 15.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 00:57:28 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.6), 'DMC': np.float64(54.6), 'DC': 21.4, 'ISI': np.float64(0.0), 'BUI': np.float64(47.3), 'FWI': np.float64(0.0), 'Temperature': 35.0, 'RH': 30.0, 'Ws': 13.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 00:57:44 - WildfireSystem - INFO - Starting regional scan for 25 regions
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Dehradun, Uttarakhand: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Shimla, Himachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Srinagar, J&K: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Gangtok, Sikkim: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Itanagar, Arunachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Kohima, Nagaland: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Imphal, Manipur: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Aizawl, Mizoram: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Shillong, Meghalaya: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Guwahati, Assam: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Agartala, Tripura: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Kolkata, West Bengal: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Bhubaneswar, Odisha: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Raipur, Chhattisgarh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Bhopal, Madhya Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Nagpur, Maharashtra: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Bengaluru, Karnataka: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Thiruvananthapuram, Kerala: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Chennai, Tamil Nadu: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Amaravati, Andhra Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Hyderabad, Telangana: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Panaji, Goa: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Ahmedabad, Gujarat: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Jaipur, Rajasthan: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region New Delhi: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - INFO - Regional scan completed: 0 regions scanned
+2026-04-24 01:01:36 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 01:01:36 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:01:36 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:01:37 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:01:37 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:01:37 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:35 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 01:11:39 - WildfireSystem - INFO - Starting regional scan for 25 regions
+2026-04-24 01:11:39 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:39 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:40 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:40 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:40 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:40 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:41 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:41 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:41 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:41 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:42 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:42 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:42 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:42 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:42 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:43 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:43 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:44 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:44 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:44 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:44 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:45 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:45 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:45 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:45 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:46 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:46 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:46 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:46 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:47 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:47 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:47 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:47 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:47 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:48 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:48 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:49 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:49 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:49 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:49 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:49 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:50 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:50 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:50 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:51 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:51 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:51 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:51 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:51 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:52 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:52 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:52 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:52 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:53 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:53 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:53 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:53 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:53 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:54 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:54 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:54 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:54 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:54 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:55 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:55 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:56 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:56 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:56 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:56 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:56 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:57 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:57 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:57 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:57 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:57 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:58 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:58 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:58 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:58 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:59 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:59 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:11:59 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:59 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:11:59 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:00 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:00 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:00 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:00 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:01 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:01 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:01 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:01 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:01 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:02 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:02 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:02 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:02 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:03 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:03 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:03 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:04 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:04 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:04 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:04 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:04 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:05 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:05 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:05 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:05 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:06 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:06 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:06 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:07 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:07 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:07 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:07 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:07 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:08 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:08 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:08 - WildfireSystem - WARNING - API returned status 401
+2026-04-24 01:12:08 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:08 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 25.0, 'RH': 50.0, 'Ws': 10.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:12:08 - WildfireSystem - INFO - Regional scan completed: 25 regions scanned
+2026-04-24 01:20:31 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 01:20:36 - WildfireSystem - INFO - Starting regional scan for 25 regions
+2026-04-24 01:20:37 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 30.33, 'lon': 78.06}, Status: success, Time: 0.81s
+2026-04-24 01:20:37 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.7), 'DMC': np.float64(52.6), 'DC': 19.4, 'ISI': np.float64(0.0), 'BUI': np.float64(45.4), 'FWI': np.float64(0.0), 'Temperature': 22.6, 'RH': 63.0, 'Ws': 4.3, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:38 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 31.1, 'lon': 77.17}, Status: success, Time: 0.78s
+2026-04-24 01:20:38 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.7), 'DMC': np.float64(52.6), 'DC': 18.5, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 17.4, 'RH': 61.0, 'Ws': 5.7, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.81
+2026-04-24 01:20:39 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 33.78, 'lon': 76.08}, Status: success, Time: 0.79s
+2026-04-24 01:20:39 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.9), 'DMC': np.float64(52.3), 'DC': 16.1, 'ISI': np.float64(0.0), 'BUI': np.float64(44.5), 'FWI': np.float64(0.0), 'Temperature': 3.9, 'RH': 68.0, 'Ws': 5.8, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:40 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 27.53, 'lon': 88.51}, Status: success, Time: 0.79s
+2026-04-24 01:20:40 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.1), 'DMC': np.float64(52.4), 'DC': 17.7, 'ISI': np.float64(0.0), 'BUI': np.float64(44.9), 'FWI': np.float64(0.0), 'Temperature': 13.1, 'RH': 70.0, 'Ws': 2.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:40 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.21, 'lon': 94.72}, Status: success, Time: 0.79s
+2026-04-24 01:20:40 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.2), 'DMC': np.float64(52.2), 'DC': 18.8, 'ISI': np.float64(0.0), 'BUI': np.float64(44.9), 'FWI': np.float64(0.0), 'Temperature': 19.2, 'RH': 82.0, 'Ws': 3.9, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:41 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.15, 'lon': 94.11}, Status: success, Time: 0.79s
+2026-04-24 01:20:41 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.6), 'DMC': np.float64(52.1), 'DC': 19.8, 'ISI': np.float64(0.0), 'BUI': np.float64(44.9), 'FWI': np.float64(0.0), 'Temperature': 24.6, 'RH': 88.0, 'Ws': 4.7, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:42 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 24.8, 'lon': 93.93}, Status: success, Time: 0.79s
+2026-04-24 01:20:42 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.0), 'DMC': np.float64(52.2), 'DC': 19.2, 'ISI': np.float64(0.0), 'BUI': np.float64(44.9), 'FWI': np.float64(0.0), 'Temperature': 21.3, 'RH': 83.0, 'Ws': 4.6, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:43 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.72, 'lon': 92.93}, Status: success, Time: 0.79s
+2026-04-24 01:20:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.1), 'DMC': np.float64(52.3), 'DC': 19.4, 'ISI': np.float64(0.0), 'BUI': np.float64(45.1), 'FWI': np.float64(0.0), 'Temperature': 22.4, 'RH': 80.0, 'Ws': 2.3, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:44 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 25.46, 'lon': 91.36}, Status: success, Time: 0.79s
+2026-04-24 01:20:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.9), 'DMC': np.float64(51.8), 'DC': 18.3, 'ISI': np.float64(0.0), 'BUI': np.float64(44.4), 'FWI': np.float64(0.0), 'Temperature': 16.1, 'RH': 91.0, 'Ws': 4.7, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:20:44 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.2, 'lon': 91.77}, Status: success, Time: 0.77s
+2026-04-24 01:20:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.5), 'DMC': np.float64(51.9), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(44.8), 'FWI': np.float64(0.0), 'Temperature': 25.4, 'RH': 91.0, 'Ws': 2.6, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:45 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.84, 'lon': 91.28}, Status: success, Time: 0.78s
+2026-04-24 01:20:45 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.9), 'DMC': np.float64(52.0), 'DC': 20.3, 'ISI': np.float64(0.0), 'BUI': np.float64(44.9), 'FWI': np.float64(0.0), 'Temperature': 27.6, 'RH': 91.0, 'Ws': 5.1, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:46 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 22.57, 'lon': 88.36}, Status: success, Time: 0.79s
+2026-04-24 01:20:46 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(26.0), 'DMC': np.float64(51.9), 'DC': 20.4, 'ISI': np.float64(0.0), 'BUI': np.float64(44.9), 'FWI': np.float64(0.0), 'Temperature': 28.0, 'RH': 92.0, 'Ws': 6.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:47 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 20.29, 'lon': 85.82}, Status: success, Time: 0.79s
+2026-04-24 01:20:47 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.9), 'DMC': np.float64(51.9), 'DC': 20.2, 'ISI': np.float64(0.0), 'BUI': np.float64(44.8), 'FWI': np.float64(0.0), 'Temperature': 26.9, 'RH': 92.0, 'Ws': 8.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:48 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.25, 'lon': 81.62}, Status: success, Time: 0.79s
+2026-04-24 01:20:48 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.2), 'DMC': np.float64(53.3), 'DC': 20.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.1), 'FWI': np.float64(0.0), 'Temperature': 30.6, 'RH': 33.0, 'Ws': 3.6, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.65
+2026-04-24 01:20:49 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.25, 'lon': 77.41}, Status: success, Time: 0.79s
+2026-04-24 01:20:49 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.6), 'DMC': np.float64(53.1), 'DC': 20.2, 'ISI': np.float64(0.0), 'BUI': np.float64(45.9), 'FWI': np.float64(0.0), 'Temperature': 27.0, 'RH': 40.0, 'Ws': 4.7, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:20:49 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 21.14, 'lon': 79.08}, Status: success, Time: 0.74s
+2026-04-24 01:20:49 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.6), 'DMC': np.float64(53.0), 'DC': 20.7, 'ISI': np.float64(0.0), 'BUI': np.float64(45.8), 'FWI': np.float64(0.0), 'Temperature': 29.6, 'RH': 51.0, 'Ws': 3.3, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:20:50 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 12.97, 'lon': 77.59}, Status: success, Time: 0.84s
+2026-04-24 01:20:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.0), 'DMC': np.float64(52.6), 'DC': 19.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.4), 'FWI': np.float64(0.0), 'Temperature': 25.2, 'RH': 66.0, 'Ws': 3.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:51 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 8.52, 'lon': 76.93}, Status: success, Time: 0.81s
+2026-04-24 01:20:51 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.5), 'DMC': np.float64(52.3), 'DC': 20.5, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 28.6, 'RH': 84.0, 'Ws': 5.2, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:52 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 13.08, 'lon': 80.27}, Status: success, Time: 0.77s
+2026-04-24 01:20:52 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.5), 'DMC': np.float64(52.3), 'DC': 20.6, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 28.9, 'RH': 84.0, 'Ws': 5.1, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:53 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 16.5, 'lon': 80.51}, Status: success, Time: 0.79s
+2026-04-24 01:20:53 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.3), 'DMC': np.float64(52.1), 'DC': 20.4, 'ISI': np.float64(0.0), 'BUI': np.float64(45.1), 'FWI': np.float64(0.0), 'Temperature': 28.0, 'RH': 88.0, 'Ws': 4.4, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:53 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 17.38, 'lon': 78.48}, Status: success, Time: 0.79s
+2026-04-24 01:20:53 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.6), 'DMC': np.float64(52.9), 'DC': 20.4, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 28.3, 'RH': 54.0, 'Ws': 3.3, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:20:54 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 15.49, 'lon': 73.82}, Status: success, Time: 0.80s
+2026-04-24 01:20:54 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(25.0), 'DMC': np.float64(52.3), 'DC': 20.7, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 29.5, 'RH': 85.0, 'Ws': 3.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:20:55 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 23.02, 'lon': 72.57}, Status: success, Time: 0.89s
+2026-04-24 01:20:55 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.5), 'DMC': np.float64(53.1), 'DC': 20.5, 'ISI': np.float64(0.0), 'BUI': np.float64(45.9), 'FWI': np.float64(0.0), 'Temperature': 28.4, 'RH': 41.0, 'Ws': 4.7, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.64
+2026-04-24 01:20:56 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 26.91, 'lon': 75.78}, Status: success, Time: 0.80s
+2026-04-24 01:20:56 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.5), 'DMC': np.float64(53.4), 'DC': 20.5, 'ISI': np.float64(0.0), 'BUI': np.float64(46.2), 'FWI': np.float64(0.0), 'Temperature': 28.8, 'RH': 28.0, 'Ws': 4.1, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.68
+2026-04-24 01:20:57 - WildfireSystem - INFO - API Call - Endpoint: weather, Params: {'lat': 28.61, 'lon': 77.23}, Status: success, Time: 0.77s
+2026-04-24 01:20:57 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(24.2), 'DMC': np.float64(53.3), 'DC': 20.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.2), 'FWI': np.float64(0.0), 'Temperature': 30.6, 'RH': 32.0, 'Ws': 3.6, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.66
+2026-04-24 01:20:57 - WildfireSystem - INFO - Regional scan completed: 25 regions scanned
+2026-04-24 01:21:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.6), 'DMC': np.float64(53.2), 'DC': 18.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 16.5, 'RH': 28.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.83
+2026-04-24 01:21:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.8), 'DMC': np.float64(53.3), 'DC': 17.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.6), 'FWI': np.float64(0.0), 'Temperature': 11, 'RH': 20.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:21:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.5), 'DMC': np.float64(52.9), 'DC': 17.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 11, 'RH': 40, 'Ws': 30.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.82
+2026-04-24 01:21:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.4), 'DMC': np.float64(52.9), 'DC': 17.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 11, 'RH': 40, 'Ws': 22.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:21:32 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.5), 'DMC': np.float64(52.9), 'DC': 17.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.2), 'FWI': np.float64(0.0), 'Temperature': 11.0, 'RH': 40.0, 'Ws': 15.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.80
+2026-04-24 01:21:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(78.8), 'DMC': np.float64(53.4), 'DC': np.float64(25.7), 'ISI': np.float64(0.3), 'BUI': np.float64(46.9), 'FWI': np.float64(0.4), 'Temperature': 48.0, 'RH': 43.4, 'Ws': 6, 'Rain': 5}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.68
+2026-04-24 01:21:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(23.5), 'DMC': np.float64(53.4), 'DC': 21.1, 'ISI': np.float64(0.0), 'BUI': np.float64(46.2), 'FWI': np.float64(0.0), 'Temperature': 32, 'RH': 31.0, 'Ws': 6, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.66
+2026-04-24 01:21:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 101.0, 'DMC': np.float64(52.8), 'DC': np.float64(22.8), 'ISI': np.float64(1.9), 'BUI': np.float64(46.0), 'FWI': np.float64(4.6), 'Temperature': 32, 'RH': 62, 'Ws': 12.0, 'Rain': 5}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.79
+2026-04-24 01:21:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(69.8), 'DMC': np.float64(28.3), 'DC': np.float64(32.3), 'ISI': np.float64(0.1), 'BUI': np.float64(26.4), 'FWI': np.float64(0.1), 'Temperature': 32, 'RH': 62, 'Ws': 9.0, 'Rain': 25.0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.80
+2026-04-24 01:21:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': 101.0, 'DMC': np.float64(52.8), 'DC': np.float64(22.8), 'ISI': np.float64(1.4), 'BUI': np.float64(46.0), 'FWI': np.float64(3.3), 'Temperature': 32.0, 'RH': 62.0, 'Ws': 6.0, 'Rain': 5.0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.78
+2026-04-24 01:24:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.3), 'DMC': np.float64(53.8), 'DC': 25.3, 'ISI': np.float64(0.0), 'BUI': np.float64(47.2), 'FWI': np.float64(0.0), 'Temperature': 55, 'RH': 28.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.80
+2026-04-24 01:24:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.6), 'DMC': np.float64(53.7), 'DC': 22.2, 'ISI': np.float64(0.0), 'BUI': np.float64(46.7), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 20.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:24:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(18.0), 'DMC': np.float64(53.3), 'DC': 22.2, 'ISI': np.float64(0.0), 'BUI': np.float64(46.3), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 40, 'Ws': 30.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.90
+2026-04-24 01:24:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(19.1), 'DMC': np.float64(53.3), 'DC': 22.2, 'ISI': np.float64(0.0), 'BUI': np.float64(46.3), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 40, 'Ws': 22.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:24:50 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.4), 'DMC': np.float64(53.3), 'DC': 22.2, 'ISI': np.float64(0.0), 'BUI': np.float64(46.3), 'FWI': np.float64(0.0), 'Temperature': 38.0, 'RH': 40.0, 'Ws': 15.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:24:58 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.3), 'DMC': np.float64(54.9), 'DC': 25.0, 'ISI': np.float64(0.0), 'BUI': np.float64(48.1), 'FWI': np.float64(0.0), 'Temperature': 55, 'RH': 28.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.80
+2026-04-24 01:24:58 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.6), 'DMC': np.float64(54.8), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(47.6), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 20.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:24:59 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(18.0), 'DMC': np.float64(54.4), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(47.3), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 40, 'Ws': 30.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.90
+2026-04-24 01:24:59 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(19.1), 'DMC': np.float64(54.4), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(47.3), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 40, 'Ws': 22.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:24:59 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.4), 'DMC': np.float64(54.4), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(47.3), 'FWI': np.float64(0.0), 'Temperature': 38.0, 'RH': 40.0, 'Ws': 15.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:25:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(18.9), 'DMC': np.float64(54.6), 'DC': 25.0, 'ISI': np.float64(0.0), 'BUI': np.float64(47.9), 'FWI': np.float64(0.0), 'Temperature': 55, 'RH': 44.8, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:25:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.9), 'DMC': np.float64(54.6), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(47.4), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 32.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 01:25:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(18.4), 'DMC': np.float64(54.1), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.9), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 64, 'Ws': 30.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.78
+2026-04-24 01:25:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(19.3), 'DMC': np.float64(54.1), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.9), 'FWI': np.float64(0.0), 'Temperature': 38, 'RH': 64, 'Ws': 22.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 01:25:06 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.4), 'DMC': np.float64(54.1), 'DC': 21.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.9), 'FWI': np.float64(0.0), 'Temperature': 38.0, 'RH': 64.0, 'Ws': 15.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.80
+2026-04-24 01:27:43 - WildfireSystem - INFO - Models loaded successfully
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.2), 'DMC': np.float64(52.9), 'DC': 18.1, 'ISI': np.float64(0.0), 'BUI': np.float64(45.4), 'FWI': np.float64(0.0), 'Temperature': 15.0, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.80
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.0), 'DMC': np.float64(52.9), 'DC': 18.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.5), 'FWI': np.float64(0.0), 'Temperature': 16.6, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.81
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.9), 'DMC': np.float64(53.0), 'DC': 18.6, 'ISI': np.float64(0.0), 'BUI': np.float64(45.5), 'FWI': np.float64(0.0), 'Temperature': 18.2, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.82
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.8), 'DMC': np.float64(53.0), 'DC': 18.9, 'ISI': np.float64(0.0), 'BUI': np.float64(45.6), 'FWI': np.float64(0.0), 'Temperature': 19.7, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.83
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.7), 'DMC': np.float64(53.0), 'DC': 19.2, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 21.3, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.73
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.6), 'DMC': np.float64(53.0), 'DC': 19.5, 'ISI': np.float64(0.0), 'BUI': np.float64(45.7), 'FWI': np.float64(0.0), 'Temperature': 22.9, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.72
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.5), 'DMC': np.float64(53.1), 'DC': 19.8, 'ISI': np.float64(0.0), 'BUI': np.float64(45.8), 'FWI': np.float64(0.0), 'Temperature': 24.5, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.3), 'DMC': np.float64(53.1), 'DC': 20.0, 'ISI': np.float64(0.0), 'BUI': np.float64(45.8), 'FWI': np.float64(0.0), 'Temperature': 26.1, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.2), 'DMC': np.float64(53.1), 'DC': 20.3, 'ISI': np.float64(0.0), 'BUI': np.float64(45.9), 'FWI': np.float64(0.0), 'Temperature': 27.6, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.1), 'DMC': np.float64(53.1), 'DC': 20.6, 'ISI': np.float64(0.0), 'BUI': np.float64(46.0), 'FWI': np.float64(0.0), 'Temperature': 29.2, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.0), 'DMC': np.float64(53.2), 'DC': 20.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.0), 'FWI': np.float64(0.0), 'Temperature': 30.8, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.9), 'DMC': np.float64(53.2), 'DC': 21.2, 'ISI': np.float64(0.0), 'BUI': np.float64(46.1), 'FWI': np.float64(0.0), 'Temperature': 32.4, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.7), 'DMC': np.float64(53.2), 'DC': 21.5, 'ISI': np.float64(0.0), 'BUI': np.float64(46.2), 'FWI': np.float64(0.0), 'Temperature': 33.9, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.6), 'DMC': np.float64(53.2), 'DC': 21.7, 'ISI': np.float64(0.0), 'BUI': np.float64(46.2), 'FWI': np.float64(0.0), 'Temperature': 35.5, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.5), 'DMC': np.float64(53.3), 'DC': 22.0, 'ISI': np.float64(0.0), 'BUI': np.float64(46.3), 'FWI': np.float64(0.0), 'Temperature': 37.1, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.4), 'DMC': np.float64(53.3), 'DC': 22.3, 'ISI': np.float64(0.0), 'BUI': np.float64(46.4), 'FWI': np.float64(0.0), 'Temperature': 38.7, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.71
+2026-04-24 01:27:43 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.3), 'DMC': np.float64(53.3), 'DC': 22.6, 'ISI': np.float64(0.0), 'BUI': np.float64(46.4), 'FWI': np.float64(0.0), 'Temperature': 40.3, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.79
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.2), 'DMC': np.float64(53.4), 'DC': 22.9, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 41.8, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.77
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.0), 'DMC': np.float64(53.4), 'DC': 23.2, 'ISI': np.float64(0.0), 'BUI': np.float64(46.5), 'FWI': np.float64(0.0), 'Temperature': 43.4, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(19.9), 'DMC': np.float64(53.4), 'DC': 23.5, 'ISI': np.float64(0.0), 'BUI': np.float64(46.6), 'FWI': np.float64(0.0), 'Temperature': 45.0, 'RH': 40, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.76
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(20.9), 'DMC': np.float64(53.6), 'DC': 23.5, 'ISI': np.float64(0.0), 'BUI': np.float64(46.8), 'FWI': np.float64(0.0), 'Temperature': 45.0, 'RH': 28.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.80
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(22.9), 'DMC': np.float64(53.5), 'DC': 20.8, 'ISI': np.float64(0.0), 'BUI': np.float64(46.3), 'FWI': np.float64(0.0), 'Temperature': 30, 'RH': 20.0, 'Ws': 15, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(18.7), 'DMC': np.float64(53.2), 'DC': 20.8, 'ISI': np.float64(0.0), 'BUI': np.float64(46.0), 'FWI': np.float64(0.0), 'Temperature': 30, 'RH': 40, 'Ws': 30.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'No Fire', 'action': 'normal'}, Confidence: 0.90
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(19.8), 'DMC': np.float64(53.2), 'DC': 20.8, 'ISI': np.float64(0.0), 'BUI': np.float64(46.0), 'FWI': np.float64(0.0), 'Temperature': 30, 'RH': 40, 'Ws': 22.5, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70
+2026-04-24 01:27:44 - WildfireSystem - INFO - Prediction - Inputs: {'FFMC': np.float64(21.0), 'DMC': np.float64(53.2), 'DC': 20.8, 'ISI': np.float64(0.0), 'BUI': np.float64(46.0), 'FWI': np.float64(0.0), 'Temperature': 30.0, 'RH': 40.0, 'Ws': 15.0, 'Rain': 0}, Output: {'linguistic_risk_level': 'Low Fire', 'action': 'monitor'}, Confidence: 0.70

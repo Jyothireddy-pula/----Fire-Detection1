@@ -158,3 +158,86 @@
 2026-04-23 18:57:26 - WildfireSystem - ERROR - Failed to load models: expected str, bytes or os.PathLike object, not NoneType
 2026-04-23 19:07:46 - WildfireSystem - ERROR - Failed to load models: expected str, bytes or os.PathLike object, not NoneType
 2026-04-23 19:42:46 - WildfireSystem - ERROR - Frontend analysis error: Seed must be between 0 and 2**32 - 1
+2026-04-24 00:15:52 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:21:20 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:21:21 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:21:21 - WildfireSystem - ERROR - Failed to load models: No module named 'backend.models.fuzzy'
+2026-04-24 00:45:33 - WildfireSystem - ERROR - Failed to load models: 'PSOANFISOptimizer' object has no attribute 'anfis_model'
+2026-04-24 00:45:35 - WildfireSystem - ERROR - Failed to load models: 'PSOANFISOptimizer' object has no attribute 'anfis_model'
+2026-04-24 00:45:35 - WildfireSystem - ERROR - Failed to load models: 'PSOANFISOptimizer' object has no attribute 'anfis_model'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Dehradun, Uttarakhand: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Shimla, Himachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Srinagar, J&K: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Gangtok, Sikkim: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Itanagar, Arunachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Kohima, Nagaland: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Imphal, Manipur: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Aizawl, Mizoram: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Shillong, Meghalaya: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Guwahati, Assam: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Agartala, Tripura: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Kolkata, West Bengal: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Bhubaneswar, Odisha: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Raipur, Chhattisgarh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Bhopal, Madhya Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Nagpur, Maharashtra: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Bengaluru, Karnataka: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Thiruvananthapuram, Kerala: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Chennai, Tamil Nadu: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Amaravati, Andhra Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Hyderabad, Telangana: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Panaji, Goa: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Ahmedabad, Gujarat: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region Jaipur, Rajasthan: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:46:23 - WildfireSystem - ERROR - Failed to scan region New Delhi: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Dehradun, Uttarakhand: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Shimla, Himachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Srinagar, J&K: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Gangtok, Sikkim: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Itanagar, Arunachal Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Kohima, Nagaland: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Imphal, Manipur: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Aizawl, Mizoram: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Shillong, Meghalaya: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Guwahati, Assam: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Agartala, Tripura: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Kolkata, West Bengal: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Bhubaneswar, Odisha: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Raipur, Chhattisgarh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Bhopal, Madhya Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Nagpur, Maharashtra: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Bengaluru, Karnataka: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Thiruvananthapuram, Kerala: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Chennai, Tamil Nadu: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Amaravati, Andhra Pradesh: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Hyderabad, Telangana: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Panaji, Goa: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Ahmedabad, Gujarat: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region Jaipur, Rajasthan: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 00:57:44 - WildfireSystem - ERROR - Failed to scan region New Delhi: 'NoneType' object has no attribute 'get_weather'
+2026-04-24 01:01:37 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:40 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:41 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:42 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:44 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:45 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:46 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:47 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:49 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:50 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:51 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:52 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:53 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:54 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:56 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:57 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:58 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:11:59 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:00 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:01 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:02 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:04 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:05 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:06 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:07 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:12:08 - WildfireSystem - ERROR - API failed and no cached data available, using defaults

@@ -4,7 +4,7 @@ A production-grade, real-time wildfire risk prediction system using PSO-ANFIS (P
 
 ## 🎯 Features
 
-- **Real-time Prediction**: Live weather data integration via OpenWeatherMap API
+- **Real-time Prediction**: Live weather data integration via free Open-Meteo API (No Key Required)
 - **Soft Computing**: Fuzzy Logic, ANFIS, PSO optimization, SHAP explainability
 - **Regional Scanning**: Monitor 25+ locations simultaneously
 - **Simulation & Analysis**: Trend analysis and scenario simulation
@@ -18,7 +18,8 @@ A production-grade, real-time wildfire risk prediction system using PSO-ANFIS (P
 - Python 3.9+
 - 4GB RAM minimum
 - 2GB free disk space
-- OpenWeatherMap API key (free tier)
+- 2GB free disk space
+- Built-in Open-Meteo Integration (No API keys required!)
 
 ## 🚀 Quick Start
 
@@ -34,19 +35,9 @@ cd FireDetection-2
 pip install -r requirements.txt
 ```
 
-### 3. Get API Key
 
-Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-### 4. Configure Environment
-
-Edit `.env` file and add your API key:
-
-```
-OPENWEATHER_API_KEY=your_api_key_here
-```
-
-### 5. Train the Model
+### 3. Train the Model
 
 ```bash
 python train_model.py
@@ -59,7 +50,7 @@ This will:
 - Optimize with PSO
 - Save models to `models/` directory
 
-### 6. Run the Application
+### 4. Run the Application
 
 ```bash
 streamlit run frontend/app.py
@@ -73,7 +64,7 @@ The application will open at `http://localhost:8501`
 FireDetection-2/
 ├── backend/
 │   ├── api/
-│   │   └── weather.py              # OpenWeatherMap API integration
+│   │   └── weather.py              # Open-Meteo API integration (Keyless)
 │   ├── models/
 │   │   ├── fuzzy.py                # Fuzzy Logic with Gaussian MF
 │   │   ├── anfis.py                # ANFIS 5-layer implementation
@@ -103,7 +94,7 @@ FireDetection-2/
 ├── requirements.txt                # Python dependencies
 ├── Dockerfile                      # Docker configuration
 ├── docker-compose.yml              # Docker Compose
-├── .env                            # Environment variables
+├── docker-compose.yml              # Docker Compose
 └── README.md                       # This file
 ```
 
@@ -158,7 +149,7 @@ docker-compose down
 docker build -t wildfire-system .
 
 # Run container
-docker run -p 8501:8501 -e OPENWEATHER_API_KEY=your_key wildfire-system
+docker run -p 8501:8501 wildfire-system
 ```
 
 ## 📊 Usage
@@ -187,8 +178,7 @@ View all past predictions with statistics and risk distribution
 Edit `.env` file to customize:
 
 ```env
-# API Configuration
-OPENWEATHER_API_KEY=your_key
+# API Configuration (Optional Overrides)
 API_TIMEOUT=5
 API_MAX_RETRIES=3
 
@@ -222,7 +212,7 @@ This project is for research and educational purposes.
 ## 🙏 Acknowledgments
 
 - Algerian Forest Fires Dataset (UCI Machine Learning Repository)
-- OpenWeatherMap API
+- Open-Meteo API (Free & Open-Source Weather API)
 - SHAP (SHapley Additive exPlanations)
 - Streamlit
 

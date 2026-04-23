@@ -1,0 +1,26 @@
+{
+  "best_model": "anfis",
+  "all_results": {
+    "fuzzy": {
+      "rmse": 0.5628444661980527,
+      "mae": 0.2786259541984733,
+      "accuracy": 0.7404580152671756,
+      "score": 0.2322
+    },
+    "anfis": {
+      "rmse": 0.40038149746391927,
+      "mae": 0.13931297709923665,
+      "accuracy": 0.8702290076335878,
+      "score": 0.1399
+    },
+    "pso_anfis": {
+      "rmse": 0.4109660932132873,
+      "mae": 0.14599236641221375,
+      "accuracy": 0.8597328244274809,
+      "score": 0.1462
+    }
+  },
+  "training_date": "2026-04-23",
+  "dataset": "indian_forest_fires_enhanced.csv",
+  "best_model_path": "models/anfis_model.pkl"
+}
