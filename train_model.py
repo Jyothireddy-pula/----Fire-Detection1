@@ -20,7 +20,7 @@ def main():
     pipeline = DataPipeline(model_dir='models')
     
     # Train the model
-    dataset_path = 'data/indian_forest_fires.csv'
+    dataset_path = 'data/indian_forest_fires_enhanced.csv'
     
     if not os.path.exists(dataset_path):
         print(f"ERROR: Dataset not found at {dataset_path}")

@@ -29,7 +29,7 @@ class WeatherAPI:
         self.api_failure_count = 0
         self.last_valid_cache = None
     
-    def get_weather(self, lat: float, lon: float, use_cache: bool = True) -> Dict:
+    def get_weather(self, lat: float, lon: float, use_cache: bool = False) -> Dict:
         """
         Get weather data from API
         

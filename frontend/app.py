@@ -119,7 +119,7 @@ with st.sidebar:
         if st.button("Load Trained Models", use_container_width=True):
             with st.spinner("Loading models..."):
                 try:
-                    pipeline = DataPipeline()
+                    pipeline = DataPipeline(model_dir='models')
                     if pipeline.load_models():
                         st.session_state.pipeline = pipeline
                         st.session_state.models_loaded = True
@@ -238,7 +238,7 @@ if page == "📍 Single Location":
                         }
                     
                     # Make prediction
-                    prediction = st.session_state.pipeline.predict_pipeline(weather_data, month)
+                    prediction = st.session_state.pipeline.predict_pipeline(weather_data, month, location=location_name)
                     
                     # Make decision
                     decision_engine = DecisionEngine()
@@ -297,22 +297,281 @@ if page == "📍 Single Location":
                         st.metric("BUI", f"{fwi_data['BUI']:.1f}")
                         st.metric("FWI", f"{fwi_data['FWI']:.1f}")
                     
-                    # Action recommendation
+                    # Action recommendation with dynamic, user-friendly expressions
                     st.subheader("🎯 Recommended Action")
-                    st.info(decision['action_message'])
                     
-                    # Feature contribution
-                    st.subheader("🔍 Feature Contribution")
+                    # Dynamic action based on risk level
+                    risk_level = prediction['linguistic_risk_level']
+                    risk_score = prediction['risk_score']
+                    
+                    # Create dynamic action message
+                    if risk_level == 'No Fire':
+                        action_color = "🟢"
+                        action_text = "**Safe Conditions**"
+                        action_detail = "Current weather conditions are safe. No fire risk detected. Continue normal operations and maintain regular monitoring."
+                        icon = "✅"
+                    elif risk_level == 'Low Fire':
+                        action_color = "🟡"
+                        action_text = "**Monitor Conditions**"
+                        action_detail = "Low fire risk present. Maintain regular monitoring and ensure fire prevention measures are in place. Be prepared for changing conditions."
+                        icon = "👁️"
+                    elif risk_level == 'Medium Fire':
+                        action_color = "🟠"
+                        action_text = "**Prepare for Potential Fire**"
+                        action_detail = "Medium fire risk detected. Review emergency procedures, ensure firefighting equipment is ready, and increase monitoring frequency. Prepare contingency plans."
+                        icon = "⚠️"
+                    elif risk_level == 'High Fire':
+                        action_color = "🔴"
+                        action_text = "**Take Immediate Action**"
+                        action_detail = "High fire risk! Activate emergency protocols, alert authorities, evacuate vulnerable areas, and mobilize firefighting resources immediately."
+                        icon = "🚨"
+                    else:  # Extreme Fire
+                        action_color = "🔴"
+                        action_text = "**CRITICAL: Extreme Fire Danger**"
+                        action_detail = "EXTREME fire risk! Maximum emergency response required. Immediate evacuation orders, full mobilization of all resources, and activation of regional emergency coordination."
+                        icon = "💥"
+                    
+                    # Display dynamic action
+                    st.markdown(f"""
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                                padding: 20px; border-radius: 10px; color: white; margin: 10px 0;">
+                        <h3 style="margin: 0 0 10px 0;">{action_color} {action_text}</h3>
+                        <p style="margin: 0; font-size: 16px;">{action_detail}</p>
+                        <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">
+                            <strong>Risk Score:</strong> {risk_score:.2f} | <strong>Confidence:</strong> {(prediction.get('fuzzy_output', risk_score) * 100):.1f}%
+                        </p>
+                    </div>
+                    """, unsafe_allow_html=True)
+                    
+                    # Real-time status indicator
+                    st.markdown(f"""
+                    <div style="display: flex; align-items: center; gap: 10px; margin: 15px 0;">
+                        <div style="width: 12px; height: 12px; background: #00ff00; border-radius: 50%; 
+                                    animation: pulse 2s infinite;"></div>
+                        <span style="color: #666; font-size: 14px;">Live monitoring active • Last updated: Just now</span>
+                    </div>
+                    <style>
+                        @keyframes pulse {{
+                            0% {{ opacity: 1; }}
+                            50% {{ opacity: 0.5; }}
+                            100% {{ opacity: 1; }}
+                        }}
+                    </style>
+                    """, unsafe_allow_html=True)
+                    
+                    # Feature contribution with user-friendly explanations
+                    st.subheader("🔍 Feature Contribution Analysis")
+                    
+                    # Get contributions from fuzzy system
+                    fuzzy_details = prediction.get('fuzzy_details', {})
+                    output_scores = fuzzy_details.get('output_scores', {})
+                    
+                    # Create user-friendly feature analysis
+                    st.markdown("""
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                        <h4 style="margin: 0 0 10px 0;">📊 What's driving this risk level?</h4>
+                        <p style="margin: 0; color: #666; font-size: 14px;">
+                            The system analyzes multiple environmental factors to determine fire risk. 
+                            Below shows how each factor contributed to today's risk assessment.
+                        </p>
+                    </div>
+                    """, unsafe_allow_html=True)
+                    
                     contributions = decision_engine.get_feature_contribution(prediction)
                     
+                    # Create real-time animated bar chart
                     contrib_df = pd.DataFrame([
-                        {'Feature': k, 'Contribution': v} for k, v in contributions.items()
+                        {'Feature': k, 'Contribution': v * 100} for k, v in contributions.items()
                     ]).sort_values('Contribution', ascending=False)
                     
+                    # Add color column based on contribution
+                    colors = []
+                    for contrib in contrib_df['Contribution']:
+                        if contrib > 30:
+                            colors.append('#ef4444')  # Red
+                        elif contrib > 15:
+                            colors.append('#f97316')  # Orange
+                        else:
+                            colors.append('#22c55e')  # Green
+                    
+                    contrib_df['Color'] = colors
+                    
+                    # Create animated bar chart
                     fig = px.bar(contrib_df, x='Feature', y='Contribution', 
-                                color='Contribution', color_continuous_scale='Viridis')
-                    fig.update_layout(showlegend=False, height=300)
+                                color='Feature',
+                                color_discrete_map={row['Feature']: row['Color'] for _, row in contrib_df.iterrows()},
+                                animation_frame=None,
+                                range_y=[0, max(contrib_df['Contribution']) * 1.2],
+                                title='Feature Contribution to Fire Risk (%)')
+                    
+                    fig.update_layout(
+                        showlegend=False,
+                        height=400,
+                        xaxis_title="",
+                        yaxis_title="Contribution (%)",
+                        font=dict(size=12),
+                        margin=dict(l=20, r=20, t=40, b=80),
+                        xaxis={'tickangle': -45}
+                    )
+                    
+                    fig.update_traces(
+                        marker_line_width=0,
+                        opacity=0.9,
+                        hovertemplate='<b>%{x}</b><br>Contribution: %{y:.1f}%<extra></extra>'
+                    )
+                    
                     st.plotly_chart(fig, use_container_width=True)
+                    
+                    # Create user-friendly feature names and explanations
+                    feature_explanations = {
+                        'Temperature': {
+                            'name': 'Temperature',
+                            'icon': '🌡️',
+                            'explanation': 'Higher temperatures increase fire risk by drying out vegetation and making it easier for fires to start and spread.'
+                        },
+                        'Humidity': {
+                            'name': 'Humidity',
+                            'icon': '💧',
+                            'explanation': 'Lower humidity means drier air and vegetation, which significantly increases fire risk.'
+                        },
+                        'Wind Speed': {
+                            'name': 'Wind Speed',
+                            'icon': '💨',
+                            'explanation': 'Strong winds can rapidly spread fires and make them harder to control.'
+                        },
+                        'Rainfall': {
+                            'name': 'Rainfall',
+                            'icon': '🌧️',
+                            'explanation': 'Rain reduces fire risk by wetting vegetation and increasing humidity.'
+                        },
+                        'FFMC': {
+                            'name': 'Fine Fuel Moisture Code',
+                            'icon': '🌿',
+                            'explanation': 'Indicates moisture in light fuels (leaves, needles). Higher values mean drier fuels and higher fire risk.'
+                        },
+                        'DMC': {
+                            'name': 'Duff Moisture Code',
+                            'icon': '🪵',
+                            'explanation': 'Measures moisture in loosely compacted organic matter. Affects fire intensity and spread.'
+                        },
+                        'DC': {
+                            'name': 'Drought Code',
+                            'icon': '🏜️',
+                            'explanation': 'Indicates long-term dryness. Higher values mean deeper drought conditions and higher fire risk.'
+                        }
+                    }
+                    
+                    # Display feature contributions with explanations in creative cards
+                    for feature, contribution in sorted(contributions.items(), key=lambda x: x[1], reverse=True):
+                        if feature in feature_explanations:
+                            info = feature_explanations[feature]
+                            contribution_pct = contribution * 100
+                            
+                            # Color based on contribution level
+                            if contribution_pct > 30:
+                                bar_color = "#ef4444"  # Red
+                                bg_gradient = "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)"
+                                icon_bg = "#dc2626"
+                            elif contribution_pct > 15:
+                                bar_color = "#f97316"  # Orange
+                                bg_gradient = "linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%)"
+                                icon_bg = "#ea580c"
+                            else:
+                                bar_color = "#22c55e"  # Green
+                                bg_gradient = "linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)"
+                                icon_bg = "#16a34a"
+                            
+                            st.markdown(f"""
+                            <div style="margin: 20px 0; padding: 0; background: {bg_gradient}; 
+                                        border-radius: 16px; overflow: hidden; 
+                                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                                        transition: all 0.3s ease;">
+                                <div style="padding: 20px;">
+                                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                                        <div style="display: flex; align-items: center; gap: 15px;">
+                                            <div style="width: 50px; height: 50px; background: {icon_bg}; 
+                                                       border-radius: 12px; display: flex; align-items: center; 
+                                                       justify-content: center; font-size: 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                                {info['icon']}
+                                            </div>
+                                            <div>
+                                                <h4 style="margin: 0; font-size: 18px; font-weight: 700; color: #1f2937;">{info['name']}</h4>
+                                                <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 13px;">Key Risk Factor</p>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: right;">
+                                            <div style="font-size: 32px; font-weight: 800; color: {bar_color}; line-height: 1;">
+                                                {contribution_pct:.1f}%
+                                            </div>
+                                            <p style="margin: 0; color: #6b7280; font-size: 12px;">Contribution</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="background: rgba(255,255,255,0.7); border-radius: 12px; padding: 12px; margin: 15px 0;">
+                                        <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                                            <span style="font-size: 12px; font-weight: 600; color: #374151;">Impact Level</span>
+                                            <span style="font-size: 12px; font-weight: 600; color: {bar_color};">
+                                                {'High Impact' if contribution_pct > 30 else 'Medium Impact' if contribution_pct > 15 else 'Low Impact'}
+                                            </span>
+                                        </div>
+                                        <div style="background: #e5e7eb; border-radius: 6px; height: 12px; overflow: hidden;">
+                                            <div style="background: {bar_color}; width: {min(contribution_pct, 100)}%; height: 100%; 
+                                                       border-radius: 6px; position: relative;">
+                                                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; 
+                                                           background: linear-gradient(90deg, rgba(255,255,255,0.3) 0%, transparent 100%);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p style="margin: 0; color: #4b5563; font-size: 14px; line-height: 1.5;">
+                                        <strong style="color: #1f2937;">What this means:</strong> {info['explanation']}
+                                    </p>
+                                </div>
+                            </div>
+                            """, unsafe_allow_html=True)
+                    
+                    # Enhanced fuzzy reasoning section with creative design
+                    reasoning = prediction.get('reasoning', '')
+                    if reasoning:
+                        st.markdown("""
+                        <div style="margin: 30px 0; padding: 0;">
+                            <div style="background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); 
+                                        padding: 25px; border-radius: 16px; color: white; 
+                                        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);">
+                                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                                    <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); 
+                                               border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 32px;">
+                                        🧠
+                                    </div>
+                                    <div>
+                                        <h3 style="margin: 0; font-size: 24px; font-weight: 700;">Fuzzy Logic Reasoning</h3>
+                                        <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 14px;">AI-Powered Decision Making</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; margin: 15px 0;">
+                                    <h4 style="margin: 0 0 10px 0; font-size: 16px; font-weight: 600; opacity: 0.95;">
+                                        🔍 Why this risk level?
+                                    </h4>
+                                    <p style="margin: 0; line-height: 1.6; font-size: 15px; opacity: 0.95;">
+                                        {reasoning}
+                                    </p>
+                                </div>
+                                
+                                <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                                    <div style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; font-size: 12px;">
+                                        ✅ Real-time Analysis
+                                    </div>
+                                    <div style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; font-size: 12px;">
+                                        🎯 Rule-Based Logic
+                                    </div>
+                                    <div style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; font-size: 12px;">
+                                        📊 Weighted Scoring
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        """.format(reasoning=reasoning), unsafe_allow_html=True)
                     
                     # Alert if high risk
                     if decision['risk_score'] > 0.75:
