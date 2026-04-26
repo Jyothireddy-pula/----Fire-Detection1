@@ -241,3 +241,4 @@
 2026-04-24 01:12:06 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
 2026-04-24 01:12:07 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
 2026-04-24 01:12:08 - WildfireSystem - ERROR - API failed and no cached data available, using defaults
+2026-04-24 01:29:26 - WildfireSystem - ERROR - Scenario Storm failed: cannot access local variable 'b' where it is not associated with a value
